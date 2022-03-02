@@ -1,0 +1,36 @@
+.skills {
+    height: 100vh;
+    background-color: $yellow;
+}
+
+.skillsWrapper {
+    margin-top: 100px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.skillsIcons {
+
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding: 50px 80px;
+
+    li {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        transition: all 0.2s linear;
+        &:hover {
+            transform: scale(1.25);
+            color: $red;
+        }
+    }
+
+    img {
+        height: 50px;
+        width: 50px;
+        margin: 70px 80px 10px 80px;
+    }
+}

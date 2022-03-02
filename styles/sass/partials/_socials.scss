@@ -1,0 +1,83 @@
+.socials {
+    position: fixed;
+    top: 40%;
+    left: 0;
+
+}
+
+.socialsList {
+    background-color: rgba(133, 133, 133, 0.521);
+    border-radius: 20px;
+    padding: 5px 0;
+    position: relative;
+    left: 0px;
+    visibility: visible;
+    transition: all 0.3s linear;
+    z-index: 1;
+    a {
+        display: block;
+        margin: 10px;
+    }
+    img {
+        height: 50px;
+        width: 50px;
+        transition: all 0.2s linear;
+        &:hover {
+            transform: scale(1.25);
+        }
+    }
+}
+.socialAnimation {
+    visibility: hidden;
+    left: -10vh;
+}
+.socialsButtonContainer {
+    position: fixed;
+    top: 37%;
+    left: 2%;
+    z-index: 10;
+    .socialsButton {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        height: 50px;
+        width: 70px;
+        background: transparent;
+        border: none;
+        animation-name: buttonFade;
+        animation-duration: 1s;
+    
+        img {
+            height: 20px;
+            width: 20px;
+        }
+    }
+}
+.socialButtonAnimation {
+    position: fixed;
+    left: 0;
+    transition: all 0.2s linear;
+        &:hover {
+            transform: scale(1.5);
+        }
+    animation-name: buttonFade;
+    animation-duration: 1s;
+}
+
+.scrollPoints {
+    position: fixed;
+    right: 10px;
+    top: 50%;
+
+    img {
+        height: 20px;
+        width: 20px;
+        &:hover,
+        &:focus {
+            background-color: red;
+            border-radius: 50%;
+        }
+    }
+
+}
