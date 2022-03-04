@@ -1,3 +1,49 @@
 .about {
-    height: 100vh;
+    min-height: 100vh;
+    background-color: $secondary;
+
+    h2 {
+        text-align: center;
+        margin-bottom: 20px;
+    }
+}
+.aboutContainer {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.aboutLeft {
+    display: flex;
+    flex-direction: column;
+    width: 40%;
+    .aboutLeftText {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        padding: 10px 0 50px 0;
+        h3 {
+            margin-bottom: 30px;
+        }
+    }
+
+}
+.aboutRight {
+    width: 60%;
+}
+.aboutRightImages {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center;
+    width: 100%;
+    height: 80vh;
+
+
+    .img {
+        background-color: gray;
+        border-radius: 50px;
+        width: calc(100% / 2 - 50px);
+        height: calc(100% / 2 - 50px);
+        object-fit: contain;
+    }
 }

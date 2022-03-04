@@ -4,22 +4,56 @@ header {
     align-items: center;
     width: 100%;
     height: 8vh;
-    background-color: rgb(17, 15, 15);
+    background-color: rgba(17, 15, 15, 0.829);
     position: fixed;
     top: 0px;
     visibility: visible;
     opacity: 1;
     transition: all 0.5s linear;
+    z-index: 100;
+    border-bottom-left-radius: 50% 20%;
+    border-bottom-right-radius: 50% 20%;
+
 }
 .navFlex {
     display: flex;
     flex-direction: row;
     align-items: center;
     justify-content: space-between;
+    position: absolute;
 }
 
+.navTitle {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    span {
+       display: flex;
+       justify-content: center;
+       align-items: center;
+       margin: 0;
+    }
+
+}
 .navTitle h4 {
-    color: $headingColorAlt;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: $secondary;
+    user-select: none;
+    transition: all 0.3s linear;
+        &:hover {
+            color: $blue;
+        }
+    img {
+        width: 40px;
+        height: 40px;
+        margin-right: 15px;
+        transition: all 0.4s linear;
+        &:hover {
+            transform: scale(1.5);
+        }
+    }
 }
 
 .navAnimation {
@@ -34,16 +68,45 @@ header {
     }
     a {
         text-decoration: none;
-        color: $headingColorAlt;
-        &:hover {
-            color: $blue;
-        }
+        color: $primary;
+        transition: all 0.25s linear;
+    }
+    .anchorHome:hover {
+        color: $blue;
+        border-top: 5px solid $blue;
+        padding-top: 20px;
+        padding-bottom: 20px;
+        
+    }
+    .anchorAbout:hover {
+        color: $secondary;
+        border-top: 5px solid $secondary;
+        padding-top: 20px;
+        padding-bottom: 20px;
+    }
+    .anchorSkills:hover {
+        color: $green;
+        border-top: 5px solid $green;
+        padding-top: 20px;
+        padding-bottom: 20px;
+    }
+    .anchorProjects:hover {
+        color: $primary;
+        border-top: 5px solid $primary;
+        padding-top: 20px;
+        padding-bottom: 20px;
+    }
+    .anchorContact:hover {
+        color: $orange;
+        border-top: 5px solid $orange;
+        padding-top: 20px;
+        padding-bottom: 20px;
     }
 }
 .navButtonContainer {
-    position: fixed;
-    top: 4%;
-    right: -2vh;
+    position: absolute;
+    right: 0;
+    bottom: -30%;
     transition: top 0.5s linear;
     .navButton {
         display: flex;
@@ -54,7 +117,6 @@ header {
         width: 70px;
         background: transparent;
         border: none;
-
         
         img {
             height: 30px;
@@ -62,12 +124,35 @@ header {
         }
     }
 }
+.pnHidden {
+    visibility: hidden;
+    opacity: 0;
+
+}
+.pnVisible {
+    visibility: visible;
+    opacity: 1;
+    position: absolute;
+    right: 60px;
+    top: 105px;
+    user-select: none;
+    font-weight: $bold;
+    background-color: rgba(17, 15, 15, 0.829);
+    color: $secondary;
+    border-radius: 20px;
+    padding: 5px 10px;
+    
+}
 .buttonAnimation {
-    top: -1vh;
-    transition: all 0.2s linear;
-        &:hover {
-            transform: scale(1.5);
-        }
+    visibility: visible;
+    bottom: -70px;
+    img {
+
+        transition: all 0.2s linear;
+            &:hover {
+                transform: scale(2);
+            }
+    }
 }
 
 

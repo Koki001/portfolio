@@ -13,45 +13,49 @@
     <header>
         <div class="wrapper navFlex">
             <div class="navTitle">
-                <h4>Stojanco (Koki) Vasileski</h4>
+                <h4 class="nameVisible"><span class="navPhone"><img src="./assets/phone.png" alt=""></span>Stojanco <span class="koki">( Koki )</span> Vasileski</h4>
+                <!-- <h4 class="nameHidden">905 - 929 - 5059</h4> -->
             </div>
             <ul class="navListContainer">
-                <li><a href="#home">home</a></li>
-                <li><a href="#about">about</a></li>
-                <li><a href="#skills">skills</a></li>
-                <li><a href="#projects">projects</a></li>
-                <li><a href="#contact">contact</a></li>
+                <li><a class="anchorHome" href="#home">home</a></li>
+                <li><a class="anchorProjects" href="#projects">projects</a></li>
+                <li><a class="anchorSkills" href="#skills">skills</a></li>
+                <li><a class="anchorAbout" href="#about">about</a></li>
+                <li><a class="anchorContact" href="#contact">contact</a></li>
             </ul>
         </div>
+        <div class="navButtonContainer">
+            <button class="navButton"><img src="./assets/cancel.png"></button>
+        </div>
+        <p class="pnHidden">navigation</p>
     </header>
 
-    <div class="navButtonContainer">
-        <button class="navButton"><img src="./assets/cancel.png"></button>
-    </div>
     <div class="socials">
         <div class="socialsPosition">
             <div class="socialsButtonContainer">
                 <button class="socialsButton"><img src="./assets/cancel.png"></button>
+                <p class="pHidden">socials</p>
             </div>
             <ul class="socialsList">
-                <li><a href="https://www.linkedin.com/in/stojanco-vasileski-77198a230/" target="_blank"><img src="./assets/linkedin.png" alt="linkedin logo"></a></li>
-                <li><a href="https://github.com/Koki001" target="_blank"><img src="./assets/github.png" alt="github logo"></a></li>
-                <li><a href="https://twitter.com/kokicodes" target="_blank"><img src="./assets/twitter.png" alt="twitter logo"></a></li>
-                <li><a href="https://www.instagram.com/kokivasileski/" target="_blank"><img src="./assets/instagram.png" alt="instagram logo"></a></li>
+                <li><a href="https://www.linkedin.com/in/stojanco-vasileski-77198a230/" target="_blank"><img src="./assets/linkedin.png" alt="linkedin logo" title="LinkedIn Profile"></a></li>
+                <li><a href="https://github.com/Koki001" target="_blank"><img src="./assets/github.png" alt="github logo" title="GitHub Profile"></a></li>
+                <li><a href="https://twitter.com/kokicodes" target="_blank"><img src="./assets/twitter.png" alt="twitter logo" title="Twitter Profile"></a></li>
+                <li><a href="https://www.instagram.com/kokivasileski/" target="_blank"><img src="./assets/instagram.png" alt="instagram logo" title="Instagram Profile"></a></li>
             </ul>
         </div>
     </div>
-    <div class="scrollPoints">
+    <!-- <div class="scrollPoints">
         <ul class="scrollList">
             <li><a href="#home"><img src="./assets/round.png"></a></li>
-            <li><a href="#about"><img src="./assets/round.png"></a></li>
-            <li><a href="#skills"><img src="./assets/round.png"></a></li>
             <li><a href="#projects"><img src="./assets/round.png"></a></li>
+            <li><a href="#skills"><img src="./assets/round.png"></a></li>
+            <li><a href="#about"><img src="./assets/round.png"></a></li>
             <li><a href="#contact"><img src="./assets/round.png"></a></li>
         </ul>
-    </div>
+    </div> -->
 
     <main>
+        
         <section id="home" class="home">
             <div class="homeContainer wrapper">
                 <div class="homeText">
@@ -62,40 +66,155 @@
                     <img src="./assets/welcomeweb.png" alt="">
                 </div>
             </div>
+         
         </section>
 
-        <section id="about" class="about">
-            <h2>about section start</h2>
+        <section id="projects" class="projects">
+            <h2>Projects</h2>
+            <div class="projectsContainer">
+                <div class="projectOne">
+                    <div class="wrapper projectOneWrapper">
+                        <div class="projectOneText">
+                            <h3>Project 1</h3>
+                            <h4>languages used</h4>
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Odit minus repudiandae laudantium porro. Tenetur quam aliquid perferendis nulla. Repudiandae, accusantium et. Necessitatibus, voluptates repellendus. Ut!</p>
+                            <div class="projectLinks pOneLinks">
+                                <a href="" title="Link to live site" class="liveLink">Live Link</a>
+                                <a href="" title="Link to GitHub repository" class="codeLink">Code Link</a>
+                            </div>
+                        </div>
+                        <div class="projectOneImage">
+                            <div class="img">
+                                <!-- <img src="./assets/project2-2.png" alt=""> -->
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="projectTwo">
+                    <div class="wrapper projectTwoWrapper">
+                        <div class="projectTwoImage">
+                            <div class="img">
+                                <!-- <img src="./assets/project2-2.png" alt=""> -->
+                            </div>
+                        </div>
+                        <div class="projectTwoText">
+                            <h3>Project 2</h3>
+                            <h4>languages used</h4>
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Odit minus repudiandae laudantium porro. Tenetur
+                                quam aliquid perferendis nulla. Repudiandae, accusantium et. Necessitatibus, voluptates repellendus. Ut!</p>
+                            <div class="projectLinks pTwoLinks">
+                                <a href="" title="Link to live site" class="liveLink">Live Link</a>
+                                <a href="" title="Link to GitHub repository" class="codeLink">Code Link</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="projectThree">
+                    <div class="wrapper projectThreeWrapper">
+                        <div class="projectThreeText">
+                            <h3>Project 3</h3>
+                            <h4>languages used</h4>
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Odit minus repudiandae laudantium porro. Tenetur
+                                quam aliquid perferendis nulla. Repudiandae, accusantium et. Necessitatibus, voluptates repellendus. Ut!
+                            </p>
+                            <div class="projectLinks pTwoLinks">
+                                <a href="" title="Link to live site" class="liveLink">Live Link</a>
+                                <a href="" title="Link to GitHub repository" class="codeLink">Code Link</a>
+                            </div>
+                        </div>
+                        <div class="projectThreeImage">
+                            <div class="img">
+                                <!-- <img src="./assets/project2-2.png" alt=""> -->
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
         </section>
 
         <section id="skills" class="skills">
             <div class="wrapper skillsWrapper">
                 <div class="skillsText">
-                    <h2>Some of my skills include</h2>
+                    <h2>I use these tools</h2>
                 </div>
                 <ul class="skillsIcons">
-                    <li><img src="./assets/html.png" alt="">HTML5</li>
-                    <li><img src="./assets/css-3.png" alt="">CSS</li>
-                    <li><img src="./assets/javascript.png" alt="">JavaScript</li>
-                    <li><img src="./assets/sass.png" alt="">SASS</li>
-                    <li><img src="./assets/api.png" alt="">APIs</li>
-                    <li><img src="./assets/visual-studio.png" alt="">VSCode</li>
-                    <li><img src="./assets/react.png" alt="">React</li>
-                    <li><img src="./assets/database.png" alt="">Firebase</li>
-                    <li><img src="./assets/terminal.png" alt="">Git</li>
-                    <li><img src="./assets/responsive-design.png" alt="">Responsive</li>
-                    <li><img src="./assets/accessability.png" alt="">Accessibility</li>
-                    <li><img src="./assets/debug.png" alt="">Debugging</li>
+                    <li><i class="devicon-html5-plain"></i>HTML5</li>
+                    <li><i class="devicon-css3-plain"></i>CSS</li>
+                    <li><i class="devicon-javascript-plain"></i>JavaScript</li>
+                    <li><i class="devicon-sass-original"></i>SASS</li>
+                    <li><i class="devicon-vscode-plain"></i>VSCode</li>
+                    <li><i class="devicon-react-original"></i>React</li>
+                    <li><i class="devicon-firebase-plain"></i>Firebase</li>
+                    <li><i class="devicon-git-plain"></i>Git</li>
+                    <li><i class="devicon-github-original"></i>Github</li>
+                    <!-- <li><i src="./assets/api.png" alt="">APIs</li> -->
+                    <!-- <li><i src="./assets/responsive-design.png" alt="">Responsive</li> -->
+                    <!-- <li><i src="./assets/accessability.png" alt="">Accessibility</li> -->
+                    <!-- <li><i src="./assets/debug.png" alt="">Debugging</li> -->
                 </ul>
+                <h4 class="hiddenBoxText titleHidden">To achieve</h4>
+                <div class="boxText">
+                    <p class="hiddenBoxText paragraphHidden"><span class="ac">Accessible</span><span class="re">Responsive</span><span class="bu">Bug-free</span></p>
+                </div>
+                <div class="boxContainer">
+                    <img class="boxClosed" src="./assets/boxClosed.png" alt="">
+                    <img class="boxOpen boxAppear" src="./assets/boxOpen.png" alt="">
+                </div>
+                <div class="extrasContainer">
+                    <img class="imageStartPosition imageRe" src="./assets/responsive-design.png" alt="">
+                    <img class="imageStartPosition imageAc" src="./assets/accessability.png" alt="">
+                    <img class="imageStartPosition imageDe" src="./assets/debug.png" alt="">
+                </div>
+                <h5 class="hiddenBoxText designHidden">Virtual spaces</h5>
             </div>
         </section>
 
-        <section id="projects" class="projects">
-            <h2>projects section start</h2>
+        <section id="about" class="about">
+            <h2>About</h2>
+            <div class="aboutContainer wrapper">
+                <div class="aboutLeft">
+                    <div class="aboutLeftText">
+                        <h3>A little about me</h3>
+                        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Debitis provident delectus maxime dolorem
+                            nulla reiciendis dolorum accusantium sapiente ab suscipit, dicta at porro unde corporis inventore
+                            tempore! Officia porro facilis consectetur expedita, consequuntur reprehenderit ipsum nisi, culpa
+                            nostrum, quae aspernatur.</p>
+                    </div>
+                </div>
+                <div class="aboutRight">
+                    <div class="aboutRightImages">
+                        <div class="img">
+
+                        </div>
+                        <div class="img">
+
+                        </div>
+                        <div class="img">
+
+                        </div>
+                        <div class="img">
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+        
         </section>
 
         <section id="contact" class="contact">
             <h2>contact section start</h2>
+            <div class="wrapper formWrapper">
+                <form action="">
+                    <div class="formInputs">
+                        <input class="nameInput" type="name" placeholder="name">
+                        <label class="sr-only" for=""></label>
+                        <input class="emailInput" type="email" placeholder="e-mail">
+                        <label class="sr-only" for=""></label>
+                    </div>
+                    <textarea name="" id="" cols="30" rows="10" placeholder="message"></textarea>
+                    <input class="buttonInput" type="submit" value="send">
+                </form>
+            </div>
         </section>
         
     </main>
