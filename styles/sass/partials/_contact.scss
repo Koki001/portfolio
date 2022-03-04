@@ -16,27 +16,69 @@ form {
     flex-direction: column;
     align-items: flex-start;
     width: 50%;
+    min-width: 620px;
     
 
     textarea {
         width: 100%;
         resize: none;
+        background-color: $secondary;
+        border: 2px solid $primary;
+        line-height: 1.5rem;
+        padding: 10px 20px;
+        border-radius: 10px;
+            &:focus {
+                outline: 2px solid $blue;
+            }
     }
     .formInputs {
         width: 100%;
         display: flex;
+        justify-content: space-between;
         margin: 20px 0;
+        
         
     }
     .nameInput,
     .emailInput {
         margin: 0;
-        padding: 0;
-        width: 50%;
+        padding: 5px 0;
+        width: calc(50% - 1px);
         text-align: center;
+        background-color: $secondary;
+        border: 2px solid $primary;
+        border-radius: 10px;
+            &:focus {
+                outline: 2px solid $blue;
+            }
     }
-    .buttonInput {
-        width: 30%;
+    .formButtons {
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+    }
+    .buttonInputSend {
+        width: 300px;
         margin: 20px 0;
+        background-color: $secondary;
+        border: 2px solid $primary;
+        padding: 5px 0;
+        border-radius: 10px;
+        &:hover {
+            background-color: $green;
+            color: $primary;
+        }
+    }
+    .buttonInputClear {
+        width: 300px;
+        margin: 20px 0;
+        background-color: $secondary;
+        border: 2px solid $primary;
+        padding: 5px 0;
+        border-radius: 10px;
+        &:hover {
+            background-color: $orange;
+            color: $primary;
+        }
     }
 }

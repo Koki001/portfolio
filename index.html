@@ -13,7 +13,7 @@
     <header>
         <div class="wrapper navFlex">
             <div class="navTitle">
-                <h4 class="nameVisible"><span class="navPhone"><img src="./assets/phone.png" alt=""></span>Stojanco <span class="koki">( Koki )</span> Vasileski</h4>
+                <h4 class="nameVisible"><span class="navPhone"><img src="./assets/phone.png" alt=""></span>Stojanco (<span class="koki">Koki</span>) Vasileski</h4>
                 <!-- <h4 class="nameHidden">905 - 929 - 5059</h4> -->
             </div>
             <ul class="navListContainer">
@@ -152,7 +152,7 @@
                     <!-- <li><i src="./assets/accessability.png" alt="">Accessibility</li> -->
                     <!-- <li><i src="./assets/debug.png" alt="">Debugging</li> -->
                 </ul>
-                <h4 class="hiddenBoxText titleHidden">To achieve</h4>
+                <h4 class="hiddenBoxText titleHidden">To Build</h4>
                 <div class="boxText">
                     <p class="hiddenBoxText paragraphHidden"><span class="ac">Accessible</span><span class="re">Responsive</span><span class="bu">Bug-free</span></p>
                 </div>
@@ -204,15 +204,18 @@
         <section id="contact" class="contact">
             <h2>contact section start</h2>
             <div class="wrapper formWrapper">
-                <form action="">
+                <form id="form" action="">
                     <div class="formInputs">
                         <input class="nameInput" type="name" placeholder="name">
-                        <label class="sr-only" for=""></label>
+                        <label class="sr-only" for="name"></label>
                         <input class="emailInput" type="email" placeholder="e-mail">
-                        <label class="sr-only" for=""></label>
+                        <label class="sr-only" for="email"></label>
                     </div>
-                    <textarea name="" id="" cols="30" rows="10" placeholder="message"></textarea>
-                    <input class="buttonInput" type="submit" value="send">
+                    <textarea class="textarea" name="message" id="text cols="30" rows="10" placeholder="message" form="form"></textarea>
+                    <div class="formButtons">
+                        <input class="buttonInputClear" type="submit" value="Clear Form">
+                        <input class="buttonInputSend" type="submit" value="Send Message">
+                    </div>
                 </form>
             </div>
         </section>

@@ -37,7 +37,7 @@ phoneSpan.addEventListener("click", function() {
         if (document.querySelector(".namePhone")) {
             navTitle.innerHTML = `<span class="navPhone"><img src="./assets/pencil.png" alt=""></span>905 - 929 - 5059` 
         } else {
-            navTitle.innerHTML = `<span class="navPhone"><img src="./assets/phone.png" alt=""></span>Stojanco (Koki) Vasileski` 
+            navTitle.innerHTML = `<span class="navPhone"><img src="./assets/phone.png" alt=""></span>Stojanco (<span class="koki">Koki</span>) Vasileski` 
         }
 })
 
@@ -58,21 +58,33 @@ boxClosed.addEventListener("click", function() {
     imageResponsive.classList.add("hiddenR")
     imageDebug.classList.add("hiddenD")
     boxClosed.addEventListener("mouseout", function() {
-        paragraphBox.classList.remove("hiddenBoxText")
-        designBox.classList.remove("hiddenBoxText")
         boxClosed.style.display = "none"
         boxOpen.style.opacity = "0"
-        imageAccessibility.classList.add("finalA")
-        imageResponsive.classList.add("finalR")
-        imageDebug.classList.add("finalD")
-            setTimeout(function(){
-                boxOpen.style.display = "none"
-            }, 1000)
+        setTimeout(function () {
+            paragraphBox.classList.remove("hiddenBoxText")
+            designBox.classList.remove("hiddenBoxText")
+            imageAccessibility.classList.add("finalA")
+            imageResponsive.classList.add("finalR")
+            imageDebug.classList.add("finalD")
+        }, 800)
+        setTimeout(function(){
+            boxOpen.style.display = "none"
+        }, 1000)
     })
 })
 
-
-
+const buttonForm = document.querySelector(".buttonInputClear")
+buttonForm.addEventListener("click", function(e) {
+    e.preventDefault()
+    document.querySelector(".textarea").value = ""
+    document.querySelector(".nameInput").value = ""
+    document.querySelector(".emailInput").value = ""
+    
+})
+const buttonSubmit = document.querySelector(".buttonInputSend")
+buttonSubmit.addEventListener("click", function(e) {
+    e.preventDefault()
+})
 
 
 

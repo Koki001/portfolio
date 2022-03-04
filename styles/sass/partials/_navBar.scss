@@ -44,6 +44,10 @@ header {
     transition: all 0.3s linear;
         &:hover {
             color: $blue;
+
+            .koki {
+                color: $green;
+            }
         }
     img {
         width: 40px;
@@ -54,6 +58,11 @@ header {
             transform: scale(1.5);
         }
     }
+}
+.koki {
+    color: $primary;
+    font-weight: $regular;
+    transition: all 0.3s linear;
 }
 
 .navAnimation {

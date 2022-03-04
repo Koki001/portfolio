@@ -238,6 +238,7 @@ html {
 
 html {
   font-size: 125%;
+  scroll-behavior: smooth;
 }
 
 body {
@@ -437,6 +438,40 @@ a {
     opacity: 1;
   }
 }
+@-webkit-keyframes colorChange {
+  0% {
+    color: #ee5a28;
+  }
+  25% {
+    color: #00bef3;
+  }
+  50% {
+    color: #91b461;
+  }
+  75% {
+    color: #ee5a28;
+  }
+  100% {
+    color: #00bef3;
+  }
+}
+@keyframes colorChange {
+  0% {
+    color: #ee5a28;
+  }
+  25% {
+    color: #00bef3;
+  }
+  50% {
+    color: #91b461;
+  }
+  75% {
+    color: #ee5a28;
+  }
+  100% {
+    color: #00bef3;
+  }
+}
 header {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -523,6 +558,9 @@ header {
 .navTitle h4:hover {
   color: #00bef3;
 }
+.navTitle h4:hover .koki {
+  color: #91b461;
+}
 .navTitle h4 img {
   width: 40px;
   height: 40px;
@@ -533,6 +571,13 @@ header {
 .navTitle h4 img:hover {
   -webkit-transform: scale(1.5);
           transform: scale(1.5);
+}
+
+.koki {
+  color: #ebe6e0;
+  font-weight: 400;
+  -webkit-transition: all 0.3s linear;
+  transition: all 0.3s linear;
 }
 
 .navAnimation {
@@ -865,7 +910,7 @@ header {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  width: 40%;
+  width: 35%;
 }
 .aboutLeft .aboutLeftText {
   display: -webkit-box;
@@ -878,14 +923,17 @@ header {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  padding: 10px 0 50px 0;
+  padding: 10px 40px 50px 0;
 }
 .aboutLeft .aboutLeftText h3 {
   margin-bottom: 30px;
 }
+.aboutLeft .aboutLeftText p {
+  line-height: 1.5rem;
+}
 
 .aboutRight {
-  width: 60%;
+  width: 65%;
 }
 
 .aboutRightImages {
@@ -936,27 +984,39 @@ header {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  margin-bottom: 150px;
+  margin-bottom: 50px;
 }
 .skillsWrapper h4 {
   font-size: 2rem;
+  font-weight: 400;
   margin-bottom: 50px;
   -webkit-transition: all 0.3s linear;
   transition: all 0.3s linear;
 }
 .skillsWrapper h5 {
+  position: relative;
   font-size: 4rem;
   text-transform: uppercase;
   margin: 0;
   color: #ee5a28;
-  border-bottom: 3px solid #91b461;
+  border-bottom: 2px solid #91b461;
   padding-bottom: 5px;
-  -webkit-transition: all 3s ease-in;
-  transition: all 3s ease-in;
+  -webkit-transition: all 4s ease-in;
+  transition: all 4s ease-in;
   -webkit-user-select: none;
      -moz-user-select: none;
       -ms-user-select: none;
           user-select: none;
+}
+.skillsWrapper h5::before {
+  content: "";
+  display: block;
+  position: absolute;
+  left: 0;
+  bottom: 2px;
+  width: 100%;
+  height: 2px;
+  background-color: #00bef3;
 }
 
 .skillsIcons {
@@ -968,7 +1028,8 @@ header {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  padding: 50px;
+  padding: 0px 50px;
+  margin: 20px 0;
   width: 60%;
 }
 .skillsIcons li {
@@ -982,7 +1043,7 @@ header {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  margin-top: 40px;
+  margin-top: 30px;
   margin-bottom: 10px;
   -webkit-transition: all 0.2s linear;
   transition: all 0.2s linear;
@@ -992,6 +1053,8 @@ header {
   -webkit-transform: scale(1.35);
           transform: scale(1.35);
   color: #ee5a28;
+  -webkit-animation: colorChange 2s infinite;
+          animation: colorChange 2s infinite;
 }
 .skillsIcons i {
   display: -webkit-box;
@@ -1004,7 +1067,7 @@ header {
       -ms-flex-align: center;
           align-items: center;
   font-size: 3rem;
-  margin: 10px 30px 12px 30px;
+  margin: 10px 40px;
   color: black;
 }
 
@@ -1061,6 +1124,7 @@ header {
   opacity: 1;
 }
 .boxContainer .boxClosed:hover {
+  cursor: url("../assets/questionmark.png"), auto;
   -webkit-transform: scale(1.35);
           transform: scale(1.35);
   -webkit-animation: shake 0.6s;
@@ -1388,26 +1452,74 @@ form {
       -ms-flex-align: start;
           align-items: flex-start;
   width: 50%;
+  min-width: 620px;
 }
 form textarea {
   width: 100%;
   resize: none;
+  background-color: #f6f5f1;
+  border: 2px solid #ebe6e0;
+  line-height: 1.5rem;
+  padding: 10px 20px;
+  border-radius: 10px;
+}
+form textarea:focus {
+  outline: 2px solid #00bef3;
 }
 form .formInputs {
   width: 100%;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
   margin: 20px 0;
 }
 form .nameInput,
 form .emailInput {
   margin: 0;
-  padding: 0;
-  width: 50%;
+  padding: 5px 0;
+  width: calc(50% - 1px);
   text-align: center;
+  background-color: #f6f5f1;
+  border: 2px solid #ebe6e0;
+  border-radius: 10px;
 }
-form .buttonInput {
-  width: 30%;
+form .nameInput:focus,
+form .emailInput:focus {
+  outline: 2px solid #00bef3;
+}
+form .formButtons {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+form .buttonInputSend {
+  width: 300px;
   margin: 20px 0;
+  background-color: #f6f5f1;
+  border: 2px solid #ebe6e0;
+  padding: 5px 0;
+  border-radius: 10px;
+}
+form .buttonInputSend:hover {
+  background-color: #91b461;
+  color: #ebe6e0;
+}
+form .buttonInputClear {
+  width: 300px;
+  margin: 20px 0;
+  background-color: #f6f5f1;
+  border: 2px solid #ebe6e0;
+  padding: 5px 0;
+  border-radius: 10px;
+}
+form .buttonInputClear:hover {
+  background-color: #ee5a28;
+  color: #ebe6e0;
 }
