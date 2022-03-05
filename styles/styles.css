@@ -1992,6 +1992,11 @@ footer {
   background-color: #f6f5f1;
 }
 
+@media (max-width: 1440px) {
+  .skillsWrapper h5 {
+    font-size: 2.5rem;
+  }
+}
 @media (max-width: 1080px) {
   .navListContainer li {
     padding-left: 25px;
@@ -2038,7 +2043,7 @@ footer {
   }
 
   .skillsWrapper h5 {
-    font-size: 2.5rem;
+    font-size: 2.25rem;
   }
 
   .skillsText img {
