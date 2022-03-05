@@ -10,8 +10,8 @@
         transition: all 0.2s linear;
     }
     .aboutRightImages .textPC img {
-        height: 60px;
-        width: 60px;
+        height: calc(100% / 2 - 40px);
+        width: calc(100% / 5);
         min-height: 10px;
         min-width: 10px;
         &:hover {

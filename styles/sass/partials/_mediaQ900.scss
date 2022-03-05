@@ -178,8 +178,8 @@
             img {
                 height: calc(100% / 2 - 10px);
                 width: calc(100% / 5);
-                min-width: 100px;
-                min-height: 100px;
+                min-width: 50px;
+                min-height: 50px;
                 object-fit: contain;
                 flex-wrap: wrap;
                 &:hover {
