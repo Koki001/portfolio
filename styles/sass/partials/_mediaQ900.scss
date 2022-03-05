@@ -1,0 +1,69 @@
+@media (max-width: 900px) {
+    
+    .aboutLeft {
+        flex-direction: column-reverse;
+
+        img {
+            height: 100%;
+        }
+    }
+    .aboutRightImages {
+        flex-direction: column;
+        img {
+            height: 100%;
+        }
+        .textPC {
+            img {
+                height: calc(100% / 2 - 10px);
+                width: calc(100% / 5);
+                min-width: 100px;
+                min-height: 100px;
+                object-fit: contain;
+                flex-wrap: wrap;
+                &:hover {
+                    scale: 1.2;
+                }
+            }
+        }
+        .hoverIconContainer {
+            a {
+                height: calc(100% / 2 - 30px);
+                width: calc(100% / 4);
+                min-width: 100px;
+                min-height: 100px;
+            }
+        }
+    }
+
+    .projectOneWrapper, .projectThreeWrapper {
+        flex-direction: column-reverse;
+    }
+    .projectTwoWrapper {
+        flex-direction: column-reverse;
+    }
+    .projectOneText, .projectOneImage,
+    .projectTwoText, .projectTwoImage,
+    .projectThreeText, .projectThreeImage {
+    width: 100%;
+    }
+    .skillsWrapper {
+        flex-direction: column;
+    }
+    .leftSkills {
+        width: 100%;
+    }
+    .skillsIcons {
+        li {
+            width: calc(100% / 4);
+            i {
+                font-size: 3.5rem;
+            }
+        }
+    }
+    .rightSkills {
+        width: 100%;
+        padding-bottom: 100px;
+        margin-top: 50px;
+    }
+
+}

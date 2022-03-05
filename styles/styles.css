@@ -2033,4 +2033,121 @@ footer {
   .skillsText img {
     display: none;
   }
+
+  .formWrapper {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+
+  .formText {
+    width: 80%;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  .formText h2 {
+    text-align: center;
+  }
+  .formText a {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+
+  form {
+    width: 90%;
+    margin: 20px 0;
+  }
+}
+@media (max-width: 900px) {
+  .aboutLeft {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: reverse;
+        -ms-flex-direction: column-reverse;
+            flex-direction: column-reverse;
+  }
+  .aboutLeft img {
+    height: 100%;
+  }
+
+  .aboutRightImages {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .aboutRightImages img {
+    height: 100%;
+  }
+  .aboutRightImages .textPC img {
+    height: calc(50% - 10px);
+    width: 20%;
+    min-width: 100px;
+    min-height: 100px;
+    -o-object-fit: contain;
+       object-fit: contain;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+  }
+  .aboutRightImages .textPC img:hover {
+    scale: 1.2;
+  }
+  .aboutRightImages .hoverIconContainer a {
+    height: calc(50% - 30px);
+    width: 25%;
+    min-width: 100px;
+    min-height: 100px;
+  }
+
+  .projectOneWrapper, .projectThreeWrapper {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: reverse;
+        -ms-flex-direction: column-reverse;
+            flex-direction: column-reverse;
+  }
+
+  .projectTwoWrapper {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: reverse;
+        -ms-flex-direction: column-reverse;
+            flex-direction: column-reverse;
+  }
+
+  .projectOneText, .projectOneImage,
+.projectTwoText, .projectTwoImage,
+.projectThreeText, .projectThreeImage {
+    width: 100%;
+  }
+
+  .skillsWrapper {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+
+  .leftSkills {
+    width: 100%;
+  }
+
+  .skillsIcons li {
+    width: 25%;
+  }
+  .skillsIcons li i {
+    font-size: 3.5rem;
+  }
+
+  .rightSkills {
+    width: 100%;
+    padding-bottom: 100px;
+    margin-top: 50px;
+  }
 }

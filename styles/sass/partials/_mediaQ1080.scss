@@ -45,4 +45,25 @@
             display: none;
         }
     }
+    .formWrapper {
+        flex-direction: column;
+        align-items: center;
+    }
+    .formText {
+        width: 80%;
+        justify-content: center;
+        
+        h2 {
+            text-align: center;
+        }
+        a {
+            display: flex;
+            justify-content: center;
+        }
+    }
+    form {
+        width: 90%;
+        margin: 20px 0;
+    }
+  
 }
