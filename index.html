@@ -241,12 +241,13 @@
                 </div>
                 <form id="form" target="_blank" action="https://formspree.io/f/xvolrwal" method="post">
                     <div class="formInputs">
-                        <input class="nameInput" type="name" placeholder="name">
+                        <input id="name" class="nameInput" type="name" placeholder="name">
                         <label class="sr-only" for="name">please enter your name here</label>
-                        <input class="emailInput" name="Email" type="email" id="email" placeholder="e-mail">
+                        <input id="Email" class="emailInput" name="Email" type="email" id="email" placeholder="e-mail">
                         <label class="sr-only" for="Email">please enter your email here</label>
                     </div>
                     <textarea class="textarea" name="message" id="text cols="30" rows="10" placeholder="message" form="form"></textarea>
+                    <label class="sr-only" for="text">please write your message here</label>
                     <div class="formButtons">
                         <input class="buttonInputClear" type="submit" value="Clear Form">
                         <input class="buttonInputSend" type="submit" value="Send Message">
