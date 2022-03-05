@@ -2435,6 +2435,10 @@ footer {
     font-size: 0.9rem;
     display: inline-block;
   }
+
+  .typer {
+    font-size: 0.8rem;
+  }
 }
 @media (max-width: 400px) {
   .homeImage img {
