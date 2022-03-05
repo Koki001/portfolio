@@ -1122,6 +1122,21 @@ main {
   position: relative;
   text-align: left;
 }
+.aboutLeft .aboutLeftText .leftTextLast a {
+  text-decoration: none;
+  color: black;
+  -webkit-transition: all 0.2s linear;
+  transition: all 0.2s linear;
+}
+.aboutLeft .aboutLeftText .leftTextLast a:hover {
+  color: #00bef3;
+}
+.aboutLeft .aboutLeftText .leftTextLast .gSpan {
+  color: #ee5a28;
+}
+.aboutLeft .aboutLeftText .leftTextLast .mSpan {
+  color: #00bef3;
+}
 
 .aboutRight {
   width: 100%;

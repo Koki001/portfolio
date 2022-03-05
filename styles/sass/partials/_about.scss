@@ -79,6 +79,20 @@
             object-fit: contain;
             position: relative;
             text-align: left;
+            a {
+                text-decoration: none;
+                color: black;
+                transition: all 0.2s linear;
+                &:hover {
+                    color: $blue;
+                }
+            }
+            .gSpan {
+                color: $orange;
+            }
+            .mSpan {
+                color: $blue;
+            }
         }
     }
 
