@@ -1,7 +1,13 @@
 @media (max-width: 900px) {
 
 
+    .pnHidden {
+        display: none;
+    }
 
+    .showHeader {
+        visibility: visible;
+    }
 
     .mobileNav {
         display: flex;
@@ -90,7 +96,6 @@
     }
     .pnVisibleS {
         display: block;
-
     }
     .arrowNav {
         transform: rotate(90deg);

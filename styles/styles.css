@@ -2086,6 +2086,14 @@ footer {
   }
 }
 @media (max-width: 900px) {
+  .pnHidden {
+    display: none;
+  }
+
+  .showHeader {
+    visibility: visible;
+  }
+
   .mobileNav {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -2353,5 +2361,41 @@ footer {
   .formInputs .nameInput,
 .formInputs .emailInput {
     width: 100%;
+  }
+}
+@media (max-width: 500px) {
+  .wrapper {
+    width: 100%;
+  }
+
+  .home h1 {
+    font-size: 3rem;
+  }
+
+  .homeImage {
+    padding: 5px;
+  }
+
+  .skillsIcons li:hover {
+    -webkit-transform: none;
+            transform: none;
+  }
+}
+@media (max-width: 400px) {
+  .homeImage img {
+    width: 300px;
+    height: 300px;
+  }
+
+  .boxText {
+    margin: 0;
+    width: 60%;
+  }
+  .boxText .re {
+    margin: 0;
+  }
+
+  .skillsIcons li i {
+    font-size: 2rem;
   }
 }
