@@ -1,6 +1,10 @@
 .contact {
     min-height: 95vh;
     background-color: $primary;
+    border-top-left-radius: 95% 2%;
+    border-top-right-radius: 95% 2%;
+    border-bottom-left-radius: 95% 2%;
+    border-bottom-right-radius: 95% 2%;
     h2 {
         text-align: center;
     }

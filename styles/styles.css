@@ -570,6 +570,10 @@ a {
             transform: rotateY(0deg);
   }
 }
+.mobileNav, .pnHiddenS {
+  display: none;
+}
+
 header {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -715,14 +719,14 @@ header {
   padding-bottom: 20px;
 }
 .navListContainer .anchorSkills:hover {
-  color: #91b461;
-  border-top: 5px solid #91b461;
+  color: #ebe6e0;
+  border-top: 5px solid #ebe6e0;
   padding-top: 20px;
   padding-bottom: 20px;
 }
 .navListContainer .anchorProjects:hover {
-  color: #ebe6e0;
-  border-top: 5px solid #ebe6e0;
+  color: #91b461;
+  border-top: 5px solid #91b461;
   padding-top: 20px;
   padding-bottom: 20px;
 }
@@ -956,6 +960,8 @@ main {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
+  border-bottom-left-radius: 95% 2%;
+  border-bottom-right-radius: 95% 2%;
 }
 .home p {
   -webkit-user-select: none;
@@ -1263,6 +1269,10 @@ main {
       -ms-flex-align: center;
           align-items: center;
   margin: 20vh 0;
+  border-top-left-radius: 95% 2%;
+  border-top-right-radius: 95% 2%;
+  border-bottom-left-radius: 95% 2%;
+  border-bottom-right-radius: 95% 2%;
 }
 
 .skillsText span {
@@ -1647,6 +1657,8 @@ main {
   transition: all 0.3s linear;
   background-color: #ebe6e0;
   position: relative;
+  border-top-left-radius: 95% 2%;
+  border-top-right-radius: 95% 2%;
 }
 
 .ashPikaGif {
@@ -1785,6 +1797,8 @@ main {
   -webkit-transition: all 0.3s linear;
   transition: all 0.3s linear;
   background-color: #ebe6e0;
+  border-bottom-left-radius: 95% 2%;
+  border-bottom-right-radius: 95% 2%;
 }
 
 .projectThreeWrapper {
@@ -1837,6 +1851,10 @@ main {
 .contact {
   min-height: 95vh;
   background-color: #ebe6e0;
+  border-top-left-radius: 95% 2%;
+  border-top-right-radius: 95% 2%;
+  border-bottom-left-radius: 95% 2%;
+  border-bottom-right-radius: 95% 2%;
 }
 .contact h2 {
   text-align: center;
@@ -2068,6 +2086,162 @@ footer {
   }
 }
 @media (max-width: 900px) {
+  .mobileNav {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: reverse;
+        -ms-flex-direction: row-reverse;
+            flex-direction: row-reverse;
+    position: fixed;
+    right: 0;
+    top: 60px;
+    -webkit-transition: all 0.5s linear;
+    transition: all 0.5s linear;
+  }
+  .mobileNav .navListContainerS {
+    background-color: rgba(17, 15, 15, 0.829);
+    border-radius: 20px;
+    position: relative;
+    right: 0;
+    opacity: 1;
+    -webkit-transition: all 0.5s linear;
+    transition: all 0.5s linear;
+  }
+  .mobileNav .navListContainerS li {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    padding: 10px;
+  }
+  .mobileNav .navListContainerS a {
+    text-decoration: none;
+    color: #f6f5f1;
+    border-left: 5px solid transparent;
+    border-right: 5px solid transparent;
+    padding: 5px 40px;
+  }
+  .mobileNav .navListContainerS .anchorHomeS:hover {
+    color: #00bef3;
+    border-left: 5px solid #00bef3;
+    border-right: 5px solid #00bef3;
+  }
+  .mobileNav .navListContainerS .anchorAboutS:hover {
+    color: #f6f5f1;
+    border-left: 5px solid #f6f5f1;
+    border-right: 5px solid #f6f5f1;
+  }
+  .mobileNav .navListContainerS .anchorSkillsS:hover {
+    color: #ebe6e0;
+    border-left: 5px solid #ebe6e0;
+    border-right: 5px solid #ebe6e0;
+  }
+  .mobileNav .navListContainerS .anchorProjectsS:hover {
+    color: #91b461;
+    border-left: 5px solid #91b461;
+    border-right: 5px solid #91b461;
+  }
+  .mobileNav .navListContainerS .anchorContactS:hover {
+    color: #ee5a28;
+    border-left: 5px solid #ee5a28;
+    border-right: 5px solid #ee5a28;
+  }
+
+  .navButtonS {
+    background-color: transparent;
+    border: none;
+    position: relative;
+    left: 0px;
+    height: 30px;
+    width: 30px;
+    margin: 0;
+    padding: 0;
+    cursor: pointer;
+  }
+  .navButtonS img {
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    -o-object-fit: cover;
+       object-fit: cover;
+    top: -10px;
+  }
+
+  .pnVisibleS {
+    display: block;
+  }
+
+  .arrowNav {
+    -webkit-transform: rotate(90deg);
+            transform: rotate(90deg);
+  }
+
+  .navAnimationS {
+    display: none;
+    opacity: 0;
+    position: absolute;
+    -webkit-transition: all 0.5s linear;
+    transition: all 0.5s linear;
+  }
+
+  .buttonAnimationS {
+    position: absolute;
+    top: 15px;
+    left: -65px;
+    -webkit-transition: all 0.3s linear;
+    transition: all 0.3s linear;
+  }
+  .buttonAnimationS:hover {
+    -webkit-transform: scale(1.5);
+            transform: scale(1.5);
+  }
+
+  .pnVisibleS {
+    -webkit-transform: rotate(90deg);
+            transform: rotate(90deg);
+    position: absolute;
+    right: -25px;
+    top: 100px;
+    -webkit-user-select: none;
+       -moz-user-select: none;
+        -ms-user-select: none;
+            user-select: none;
+    font-weight: 900;
+    background-color: rgba(17, 15, 15, 0.829);
+    color: #f6f5f1;
+    border-radius: 20px;
+    padding: 5px 10px;
+  }
+
+  header {
+    height: 6vh;
+    -webkit-transition: all 0.3s linear;
+    transition: all 0.3s linear;
+    width: 100%;
+    position: sticky;
+    top: 0;
+    border-bottom-left-radius: 0%;
+    border-bottom-right-radius: 0%;
+  }
+
+  .navFlex {
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+
+  .navButtonContainer {
+    display: none;
+  }
+
+  .navListContainer {
+    display: none;
+  }
+
   .aboutLeft {
     -webkit-box-orient: vertical;
     -webkit-box-direction: reverse;
@@ -2149,5 +2323,35 @@ footer {
     width: 100%;
     padding-bottom: 100px;
     margin-top: 50px;
+  }
+
+  form {
+    min-width: 300px;
+  }
+  form .formButtons {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: reverse;
+        -ms-flex-direction: column-reverse;
+            flex-direction: column-reverse;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  form .formButtons input {
+    margin: 0;
+  }
+
+  .formInputs {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .formInputs .nameInput,
+.formInputs .emailInput {
+    width: 100%;
   }
 }

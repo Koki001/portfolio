@@ -1,3 +1,6 @@
+.mobileNav, .pnHiddenS {
+    display: none;
+}
 header {
     display: flex;
     justify-content: center;
@@ -96,14 +99,15 @@ header {
         padding-bottom: 20px;
     }
     .anchorSkills:hover {
-        color: $green;
-        border-top: 5px solid $green;
-        padding-top: 20px;
-        padding-bottom: 20px;
-    }
-    .anchorProjects:hover {
         color: $primary;
         border-top: 5px solid $primary;
+        padding-top: 20px;
+        padding-bottom: 20px;
+
+    }
+    .anchorProjects:hover {
+        color: $green;
+        border-top: 5px solid $green;
         padding-top: 20px;
         padding-bottom: 20px;
     }

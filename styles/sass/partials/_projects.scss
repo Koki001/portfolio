@@ -76,7 +76,9 @@
     transition: all 0.3s linear;
     background-color: $primary;
     position: relative;
-    
+    border-top-left-radius: 95% 2%;
+    border-top-right-radius: 95% 2%;
+
 }
 .ashPikaGif {
     position: absolute;
@@ -171,6 +173,8 @@
     padding: 20px 0;
     transition: all 0.3s linear;
     background-color: $primary;
+    border-bottom-left-radius: 95% 2%;
+    border-bottom-right-radius: 95% 2%;
 }
 
 .projectThreeWrapper {

@@ -12,6 +12,28 @@ button.addEventListener("click", function () {
     }
 })
 
+const buttonS = document.querySelector(".navButtonS")
+const pNavS = document.querySelector(".pnHiddenS")
+buttonS.addEventListener("click", function () {
+    const mobileNav = document.querySelector(".navListContainerS")
+    buttonS.classList.toggle("buttonAnimationS")
+    mobileNav.classList.toggle("navAnimationS")
+    pNavS.classList.toggle("pnVisibleS")
+    if (document.querySelector(".navAnimationS")) {
+        buttonS.innerHTML = `<button class="navButtonS"><img class="arrowNav" src="./assets/down-arrow.png"></button>`
+    } else {
+        buttonS.innerHTML = `<button class="navButtonS"><img src="./assets/cancel.png"></button>`
+    }
+})
+
+
+
+
+
+
+
+
+
 
 
 const pSocial = document.querySelector(".pHidden")
@@ -90,6 +112,21 @@ buttonSubmit.addEventListener("click", function(e) {
 })
 
 
+if (window.innerWidth <= 900) {
+    const socials = document.querySelector(".socialsList")
+    buttonSocial.classList.add("socialButtonAnimation")
+    socials.classList.add("socialAnimation")
+    pSocial.classList.add("pVisible")
+
+    if (document.querySelector(".socialAnimation")) {
+        buttonSocial.innerHTML = `<button class="socialsButton"><img src="./assets/next.png"></button>`
+    } else {
+        buttonSocial.innerHTML = `<button class="socialsButton"><img src="./assets/cancel.png"></button>`
+    }
+
+} else {
+
+}
 
 
 
