@@ -10,7 +10,6 @@
     border-top-right-radius: 95% 2%;
     border-bottom-left-radius: 95% 2%;
     border-bottom-right-radius: 95% 2%;
-
 }
 .skillsText span {
     position: relative;
@@ -39,7 +38,6 @@
     width: 50%;
     height: 100%;
 }
-
 .skillsWrapper {
     display: flex;
     justify-content: center;
@@ -63,16 +61,13 @@
         transition: all 4s ease-in;
         user-select: none;
         display: block;
-        
     }
 }
-
 .skillsIcons {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
     width: 100%;
-
     li {
         display: flex;
         flex-direction: column;
@@ -99,7 +94,6 @@
     }
 
 }
-
 .extrasContainer {
     position: relative;
     display: flex;
@@ -119,7 +113,6 @@
     height: 100px;
     width: 100px;
     margin-bottom: 20px;
-
     .boxOpen{
         position: absolute;
         margin-left: auto;
@@ -132,7 +125,6 @@
         z-index: 10;
         transition: all 0.4s linear;
     }
-
     .boxClosed {
         position: absolute;
         margin-left: auto;
@@ -151,9 +143,7 @@
             animation: shake 0.6s;
             animation-iteration-count: infinite;
             color: $orange;
-            
         }
-
     }
     .boxFade {
         opacity: 0;
@@ -163,7 +153,6 @@
         opacity: 0;
         scale: 1.2;
     }
-    
 }
 .imageStartPosition {
         position: absolute;
@@ -214,7 +203,6 @@
 .boxText {
     span {
         margin: 0 25px;
-       
     }
     .re {
         margin-right: 15px;

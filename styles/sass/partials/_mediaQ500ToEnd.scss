@@ -14,7 +14,6 @@
         line-height: 1.2rem;
         font-size: 1rem;
     }
-
     .skillsIcons li {
         &:hover {
             transform: none;
@@ -26,12 +25,8 @@
     }
     .typer {
         font-size: 0.8rem;
-        
     }
-
-
 }
-
 
 @media (max-width: 400px) {
     .homeImage img {
@@ -56,17 +51,13 @@
             font-size: 0.9rem;
             margin: 0;
         }
-
-
         p {
             display: flex;
             justify-content: space-between;
             width: 300px;
         }
-
     }
     .extrasContainer {
-
         img {
             height: 50px;
             width: 50px;
@@ -84,6 +75,4 @@
     .finalR {
         left: -40px;
     }
-
-
 }

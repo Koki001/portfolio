@@ -2,7 +2,6 @@
     background-color: $secondary;
     min-height: 100vh;
     padding-bottom: 100px;
-    
     span {
         font-size: 1.1rem;
         padding: 4px 8px;
@@ -29,10 +28,8 @@
     h4 {
         margin: 5px 0;
     }
- 
     a.liveLink {
         font-size: 0.8rem;
-    
         text-decoration: none;
         color: $green;
         padding: 4px 10px;
@@ -65,7 +62,6 @@
         margin-bottom: 5px;
         font-weight: $light;
     }
-
 }
 .projectLinks {
     margin-top: 10px;
@@ -78,7 +74,6 @@
     position: relative;
     border-top-left-radius: 95% 2%;
     border-top-right-radius: 95% 2%;
-
 }
 .ashPikaGif {
     position: absolute;
@@ -91,12 +86,10 @@
     animation-name: run;
     animation-duration: 12s;
 }
-
 .projectOneWrapper {
     display: flex;
     justify-content: center;
     border-radius: 50px;
-    
 }
 .projectOneText {
     display: flex;
@@ -106,14 +99,13 @@
     text-align: right;
     width: 50%;
     padding: 20px;
-    
     a {
         text-decoration: none;
         color: black;
         transition: all 0.2s linear;
-            &:hover {
-                color: $blue;
-            }
+        &:hover {
+            color: $blue;
+        }
     }
 }
 .projectOneImage {
@@ -130,8 +122,6 @@
         min-width: 40%;
         min-height: 70%;
         object-fit: contain;
-    
-       
     }
 }
 .projectTwo {
@@ -139,7 +129,6 @@
     padding: 20px 0;
     transition: all 0.3s linear;
     background-color: $primary;
-
 }
 .projectTwoWrapper {
     display: flex;
@@ -167,7 +156,6 @@
         width: 80%;
         height: 100%;
     }
-
 }
 .projectThree {
     padding: 20px 0;
@@ -176,7 +164,6 @@
     border-bottom-left-radius: 95% 2%;
     border-bottom-right-radius: 95% 2%;
 }
-
 .projectThreeWrapper {
     display: flex;
     justify-content: center;

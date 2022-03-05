@@ -2013,11 +2013,6 @@ form .buttonInputClear:hover {
   color: #ebe6e0;
 }
 
-footer {
-  min-height: 5vh;
-  background-color: #f6f5f1;
-}
-
 @media (max-width: 1440px) {
   .skillsWrapper h5 {
     font-size: 2.5rem;

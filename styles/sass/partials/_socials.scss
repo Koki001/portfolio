@@ -3,13 +3,11 @@
     top: 40%;
     left: 0;
     z-index: 1000;
-
 }
 .socialsPosition {
     display: flex;
     flex-direction: column;
 }
-
 .socialsList {
     background-color: rgba(133, 133, 133, 0.521);
     border-radius: 20px;
@@ -45,7 +43,6 @@
     width: 25px;
     height: 25px;
     z-index: 10;
-    
     .socialsButton {
         cursor: pointer;
         display: flex;
@@ -71,7 +68,6 @@
         font-size: 1.2rem;
         visibility: hidden;
         left: 40px;
-        
     }
     .pVisible {
         visibility: visible;
@@ -92,17 +88,12 @@
     transition: all 0.2s linear;
         &:hover {
             transform: scale(2);
-            
         }
 }
-
-
-
 .scrollPoints {
     position: fixed;
     right: 10px;
     top: 50%;
-
     img {
         height: 10px;
         width: 10px;

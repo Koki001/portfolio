@@ -1,3 +1,4 @@
+// this handles my slideout nav button on larger screens
 const button = document.querySelector(".navButtonContainer")
 const pNav = document.querySelector(".pnHidden")
 button.addEventListener("click", function () {
@@ -11,7 +12,7 @@ button.addEventListener("click", function () {
         button.innerHTML = `<button class="navButton"><img src="./assets/cancel.png"></button>`
     }
 })
-
+// this handles my slideout nav button on smaller screens
 const buttonS = document.querySelector(".navButtonS")
 const pNavS = document.querySelector(".pnHiddenS")
 buttonS.addEventListener("click", function () {
@@ -25,9 +26,7 @@ buttonS.addEventListener("click", function () {
         buttonS.innerHTML = `<button class="navButtonS"><img src="./assets/cancel.png"></button>`
     }
 })
-
-
-
+// a function that loops images to create my welcome screen image
 let picNum = 1
 let pic = document.querySelector('.welcomeLoop')
 function loopImage() {
@@ -40,13 +39,7 @@ function loopImage() {
     setTimeout(loopImage, 500)
 }
 loopImage()
-
-
-
-
-
-
-
+// this is for my socials nav button
 const pSocial = document.querySelector(".pHidden")
 const buttonSocial = document.querySelector(".socialsButton")
 buttonSocial.addEventListener("click", function () {
@@ -61,8 +54,7 @@ buttonSocial.addEventListener("click", function () {
         buttonSocial.innerHTML = `<button class="socialsButton"><img src="./assets/cancel.png"></button>`
     }
 })
-
-
+// this is for my header name/phone number
 const phoneSpan = document.querySelector(".navTitle")
 phoneSpan.addEventListener("click", function() {
     const navTitle = document.querySelector(".nameVisible")
@@ -73,8 +65,7 @@ phoneSpan.addEventListener("click", function() {
             navTitle.innerHTML = `<span class="navPhone"><img src="./assets/phone.png" alt=""></span>Stojanco (<span class="koki">Koki</span>) Vasileski` 
         }
 })
-
-
+// this handles the box animation under my skills section
 const boxOpen = document.querySelector(".boxOpen")
 const boxClosed = document.querySelector(".boxClosed")
 const imageAccessibility = document.querySelector(".imageAc")
@@ -108,7 +99,7 @@ boxClosed.addEventListener("click", function() {
         }, 1000)
     })
 })
-
+// for clear button
 const buttonForm = document.querySelector(".buttonInputClear")
 buttonForm.addEventListener("click", function(e) {
     e.preventDefault()
@@ -117,6 +108,7 @@ buttonForm.addEventListener("click", function(e) {
     document.querySelector(".nameInput").value = ""
     document.querySelector(".emailInput").value = ""
 })
+// error handling for form submit button
 const buttonSubmit = document.querySelector(".buttonInputSend")
 const nameInput = document.querySelector("input[type=name]")
 const emailInput = document.querySelector("input[type=email]")
@@ -138,81 +130,17 @@ buttonSubmit.addEventListener("click", function(e) {
 
     }
 })
-
-
+// setup for navs to be minimized when reaching a screen width of 900px
 if (window.innerWidth <= 900) {
     const socials = document.querySelector(".socialsList")
     buttonSocial.classList.add("socialButtonAnimation")
     socials.classList.add("socialAnimation")
     pSocial.classList.add("pVisible")
 
-    if (document.querySelector(".socialAnimation")) {
-        buttonSocial.innerHTML = `<button class="socialsButton"><img src="./assets/next.png"></button>`
-    } else {
-        buttonSocial.innerHTML = `<button class="socialsButton"><img src="./assets/cancel.png"></button>`
-    }
-
-} else {
-
+        if (document.querySelector(".socialAnimation")) {
+            buttonSocial.innerHTML = `<button class="socialsButton"><img src="./assets/next.png"></button>`
+        } else {
+            buttonSocial.innerHTML = `<button class="socialsButton"><img src="./assets/cancel.png"></button>`
+        }
+}  else {
 }
-
-
-
-// const span = document.querySelector(".copyTest");
-
-// span.onclick = function () {
-//     document.execCommand("copy");
-// }
-
-// span.addEventListener("copy", function (event) {
-//     event.preventDefault();
-//     if (event.clipboardData) {
-//         event.clipboardData.setData("text/plain", span.textContent);
-//         console.log(event.clipboardData.getData("text"))
-//     }
-// });
-
-
-
-
-
-// window.addEventListener('scroll', function () {
-//     // scroll down
-
-// });
-
-
-// let lastScroll = 0;
-// let scrollTimer = 0;
-// let lastScrollFireTime = 0;
-
-// window.addEventListener('wheel', function (e) {
-
-//     // const minScrollTime = 5000;
-//     // const now = new Date().getTime();
-
-//     // function processScroll() {
-//     //     console.log(new Date().getTime().toString());
-//     //     if (lastScroll < window.pageYOffset) {
-//     //         window.scrollBy(0, window.innerHeight);
-//     //     }
-//     //     // scroll up
-//     //     else if (lastScroll > window.pageYOffset) {
-//     //         window.scrollBy(0, window.innerHeight * -1);
-//     //     }
-//     //     lastScroll = window.pageYOffset;
-//     // }
-
-//     // if (!scrollTimer) {
-//     //     if (now - lastScrollFireTime > (3 * minScrollTime)) {
-//     //         processScroll();   // fire immediately on first scroll
-//     //         lastScrollFireTime = now;
-//     //     }
-//     //     scrollTimer = setTimeout(function () {
-//     //         scrollTimer = null;
-//     //         lastScrollFireTime = new Date().getTime();
-//     //         processScroll();
-//     //     }, minScrollTime);
-//     // }
-//     console.log(e)
-// });

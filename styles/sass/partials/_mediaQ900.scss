@@ -1,14 +1,11 @@
 @media (max-width: 900px) {
 
-
     .pnHidden {
         display: none;
     }
-
     .showHeader {
         visibility: visible;
     }
-
     .mobileNav {
         display: flex;
         flex-direction: row-reverse;
@@ -16,7 +13,6 @@
         right: 0;
         top: 60px;
         transition: all 0.5s linear;
-
         .navListContainerS {
             background-color: rgba(17, 15, 15, 0.829);
             border-radius: 20px;
@@ -24,38 +20,29 @@
             right: 0;
             opacity: 1;
             transition: all 0.5s linear;
-
             li {
-                
                 display: flex;
                 justify-content: center;
                 padding: 10px;
-                
             }
-            
             a {
                 text-decoration: none;
                 color: $secondary;
                 border-left: 5px solid transparent;
                 border-right: 5px solid transparent;
                 padding: 5px 40px;
-
             }
             .anchorHomeS:hover {
                 color: $blue;
                 border-left: 5px solid $blue;
                 border-right: 5px solid $blue;
-
-        
             }
             .anchorAboutS:hover {
                 color: $secondary;
                 border-left: 5px solid $secondary;
                 border-right: 5px solid $secondary;
-
             }
             .anchorSkillsS:hover {
-
                 color: $primary;
                 border-left: 5px solid $primary;
                 border-right: 5px solid $primary;
@@ -65,17 +52,14 @@
                 color: $green;
                 border-left: 5px solid $green;
                 border-right: 5px solid $green;
-
             }
             .anchorContactS:hover {
                 color: $orange;
                 border-left: 5px solid $orange;
                 border-right: 5px solid $orange;
-
             }
         }
     }
-
     .navButtonS {
         background-color: transparent;
         border: none;
@@ -126,7 +110,6 @@
         color: $secondary;
         border-radius: 20px;
         padding: 5px 10px;
-
     }
 
 
@@ -200,7 +183,6 @@
             }
         }
     }
-
     .aboutLeft .aboutLeftText .firstAboutP {
         margin-bottom: 20px;
     }

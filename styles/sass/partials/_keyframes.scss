@@ -19,12 +19,10 @@
     80% {transform: rotate(-10deg);}
     100% {transform: rotate(0deg);}
 }
-
 @keyframes fadeOut {
     0% {
         opacity: 1;
     }
-
     100% {
         opacity: 0;
     }
@@ -33,7 +31,6 @@
     0% {
         opacity: 0;
     }
-
     100% {
         opacity: 1;
     }
@@ -45,7 +42,6 @@
   75% { color: $orange; }
   100% { color: $blue; }
 }
-
 @keyframes run {
   0% {
     right: 0;
@@ -65,84 +61,3 @@
      transform: rotateY(0deg);
   }
 }
-// @keyframes wobbleR {
-//   0% {
-//     transform: translate3d(-15%, 0, 0) rotate3d(0, 0, 1, -3deg)
-//   }
-//   15% {
-//     transform: translate3d(-25%, 0, 0) rotate3d(0, 0, 1, -80deg)
-//   }
-//   30% {
-//     transform: translate3d(20%, 0, 0) rotate3d(0, 0, 1, 80deg)
-//   }
-//   45% {
-//     transform: translate3d(-15%, 0, 0) rotate3d(0, 0, 1, -120deg)
-//   }
-//   60% {
-//     transform: translate3d(10%, 0, 0) rotate3d(0, 0, 1, 120deg)
-//   }
-//   75% {
-//     transform: translate3d(-5%, 0, 0) rotate3d(0, 0, 1, -20deg)
-//   }
-//   100% {
-//     transform: translate3d(0, 0, 0) rotate3d(0, 0, 1,)
-//   }
-// }
-// @keyframes wobbleA {
-//   0% {
-//     transform: translate3d(15%, 0, 0) rotate3d(0, 0, 1,)
-//   }
-//   15% {
-//     transform: translate3d(25%, 0, 0) rotate3d(0, 0, 1,)
-//   }
-//   30% {
-//     transform: translate3d(-20%, 0, 0) rotate3d(0, 0, 1,)
-//   }
-//   45% {
-//     transform: translate3d(15%, 0, 0) rotate3d(0, 0, 1,)
-//   }
-//   60% {
-//     transform: translate3d(-10%, 0, 0) rotate3d(0, 0, 1,)
-//   }
-//   75% {
-//     transform: translate3d(5%, 0, 0) rotate3d(0, 0, 1,)
-//   }
-//   100% {
-//     transform: translate3d(0, 0, 0) rotate3d(0, 0, 1, 720deg)
-//   }
-// }
-// @keyframes wobbleD {
-//   0% {
-//     transform: translate3d(-15%, 0, 0) rotate3d(0, 0, 1, 3deg)
-//   }
-//   15% {
-//     transform: translate3d(-25%, 0, 0) rotate3d(0, 0, 1, 220deg)
-//   }
-//   30% {
-//     transform: translate3d(20%, 0, 0) rotate3d(0, 0, 1,)
-//   }
-//   45% {
-//     transform: translate3d(-15%, 0, 0) rotate3d(0, 0, 1,)
-//   }
-//   60% {
-//     transform: translate3d(10%, 0, 0) rotate3d(0, 0, 1, 360deg)
-//   }
-//   75% {
-//     transform: translate3d(-5%, 0, 0) rotate3d(0, 0, 1,)
-//   }
-//   100% {
-//     transform: translate3d(0, 0, 0) rotate3d(0, 0, 1,)
-//   }
-// }
-
-
-
-// @keyframes typing {
-//   from { width: 0 }
-//   to { width: 100% }
-// }
-
-// @keyframes blink-caret {
-//     from, to { border-color: orange }
-//     50% { border-color: transparent }
-// }
