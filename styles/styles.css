@@ -1995,6 +1995,8 @@ footer {
 @media (max-width: 1440px) {
   .skillsWrapper h5 {
     font-size: 2.5rem;
+    -webkit-transition: all 0.1s linear;
+    transition: all 0.1s linear;
   }
 }
 @media (max-width: 1080px) {
