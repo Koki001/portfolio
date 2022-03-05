@@ -1398,7 +1398,7 @@ main {
   width: 25%;
   min-width: 100px;
 }
-.skillsIcons li:hover {
+.skillsIcons li:hover, .skillsIcons li:focus {
   -webkit-transform: scale(1.35);
           transform: scale(1.35);
   color: #ee5a28;
@@ -2395,6 +2395,11 @@ footer {
     -webkit-transform: none;
             transform: none;
   }
+
+  .re, .ac, .bu {
+    font-size: 0.9rem;
+    display: inline-block;
+  }
 }
 @media (max-width: 400px) {
   .homeImage img {
@@ -2412,5 +2417,28 @@ footer {
 
   .skillsIcons li i {
     font-size: 2rem;
+  }
+
+  .boxText {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    width: 100%;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  .boxText .re, .boxText .ac, .boxText .bu {
+    font-size: 0.9rem;
+    margin: 0;
+  }
+  .boxText p {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    width: 300px;
   }
 }

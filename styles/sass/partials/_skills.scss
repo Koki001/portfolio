@@ -82,7 +82,8 @@
         margin-top: 20px;
         width: calc(100% / 4);
         min-width: 100px;
-        &:hover {
+        &:hover,
+        &:focus {
             transform: scale(1.35);
             color: $orange;
             animation: colorChange 2s infinite;

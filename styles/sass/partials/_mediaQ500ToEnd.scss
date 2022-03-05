@@ -15,6 +15,10 @@
             transform: none;
         }
     }
+    .re, .ac, .bu {
+        font-size: 0.9rem;
+        display: inline-block;
+    }
 
 
 }
@@ -34,6 +38,23 @@
     }
     .skillsIcons li i {
         font-size: 2rem;
+    }
+    .boxText {
+        display: flex;
+        width: 100%;
+        justify-content: center;
+        .re, .ac, .bu {
+            font-size: 0.9rem;
+            margin: 0;
+        }
+
+
+        p {
+            display: flex;
+            justify-content: space-between;
+            width: 300px;
+        }
+
     }
 
 }
