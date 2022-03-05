@@ -95,6 +95,10 @@ form {
         width: 100%;
         display: flex;
         justify-content: space-between;
+        button {
+            
+            border: none;
+        }
     }
     .buttonInputSend {
         width: 300px;

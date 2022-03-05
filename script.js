@@ -112,14 +112,31 @@ boxClosed.addEventListener("click", function() {
 const buttonForm = document.querySelector(".buttonInputClear")
 buttonForm.addEventListener("click", function(e) {
     e.preventDefault()
+    console.log(nameInput.value)
     document.querySelector(".textarea").value = ""
     document.querySelector(".nameInput").value = ""
     document.querySelector(".emailInput").value = ""
-    
 })
 const buttonSubmit = document.querySelector(".buttonInputSend")
+const nameInput = document.querySelector("input[type=name]")
+const emailInput = document.querySelector("input[type=email]")
+const messageInput = document.querySelector("textarea")
 buttonSubmit.addEventListener("click", function(e) {
-    e.preventDefault()
+
+    if (nameInput.value === "") {
+        e.preventDefault()
+        console.log("click")
+        alert("Please enter a name before submitting the form")
+        console.log(nameInput)
+    } else if (emailInput.value === "") {
+        e.preventDefault()
+        alert("Please enter your e-mail before submitting the form")
+    } else if (messageInput.value === "") {
+        e.preventDefault()
+        alert("Please enter a message before submitting the form")
+    } else {
+
+    }
 })
 
 

@@ -3,4 +3,13 @@
         font-size: 2.5rem;
         transition: all 0.1s linear;
     }
+    .aboutRightImages .textBike img {
+        height: calc(100% / 2 - 40px);
+        width: calc(100% / 4);
+        min-height: 10px;
+        min-width: 10px;
+        &:hover {
+            scale: 1.5;
+        }
+    }
 }

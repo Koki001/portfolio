@@ -174,7 +174,8 @@
         img {
             height: 100%;
         }
-        .textPC {
+        .textPC,
+        .textBike {
             img {
                 height: calc(100% / 2 - 10px);
                 width: calc(100% / 5);
@@ -187,6 +188,9 @@
                 }
             }
         }
+        .textBike img {
+            width: calc(100% / 4);
+        }
         .hoverIconContainer {
             a {
                 height: calc(100% / 2 - 30px);
@@ -195,6 +199,10 @@
                 min-height: 100px;
             }
         }
+    }
+
+    .aboutLeft .aboutLeftText .firstAboutP {
+        margin-bottom: 20px;
     }
 
     .projectOneWrapper, .projectThreeWrapper {

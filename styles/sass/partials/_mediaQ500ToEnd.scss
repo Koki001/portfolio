@@ -9,6 +9,11 @@
     .homeImage {
         padding: 5px;
     }
+    .aboutLeft .aboutLeftText p {
+        font-weight: $light;
+        line-height: 1.2rem;
+        font-size: 1rem;
+    }
 
     .skillsIcons li {
         &:hover {
@@ -56,5 +61,25 @@
         }
 
     }
+    .extrasContainer {
+
+        img {
+            height: 50px;
+            width: 50px;
+            margin: 10px 10px 12px 10px;
+            transition: all .5s linear;
+            &:hover {
+                transform: scale(1);
+                color: $orange;
+            }
+        }
+    }
+    .finalA {
+        left: -150px;
+    }
+    .finalR {
+        left: -40px;
+    }
+
 
 }

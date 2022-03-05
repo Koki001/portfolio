@@ -6,9 +6,13 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="styles/styles.css">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/devicons/devicon@v2.14.0/devicon.min.css">
+    
     <title>kokicodes</title>
 </head>
-<body>
+
+    <!-- <span class="typer" id="main" data-words="great,fun,lightweight,easy" data-delay="100"
+        data-deleteDelay="1000"></span>
+    <span class="cursor" data-owner="main"></span> -->
 
     <header class="showHeader">
         <div class="wrapper navFlex">
@@ -88,7 +92,7 @@
                         <div class="aboutLeftText">
                             <div class="leftTextLast">
                                 <h3>Hey!</h3>
-                                <p>I'm a front end developer and a recent graduate from <a href="https://junocollege.com/">Juno College</a>! Coming from a long work history in the hospitality and management sectors, both teamwork and ensuring the clients' satisfaction have become what I'm all about! </p>
+                                <p class="firstAboutP">I'm a front end developer and a recent graduate from <a href="https://junocollege.com/">Juno College</a>! Coming from a long work history in the hospitality and management sectors, both teamwork and ensuring the clients' satisfaction have become what I'm all about! </p>
                                 <p>As fun as coding can be, taking breaks is important! Whether it's during my free time or when taking a break, <span class="gSpan">video games</span> and riding <span class="mSpan">motorcycles</span> are my go-to happiness boosters that have yet to fail me once!</p>
                             </div>
                         </div>
@@ -104,33 +108,31 @@
                         <div class="img imgPC">
                             <img src="./assets/playingVideoGames.png" alt="">
                             <div class="textCover textPC">
-                                <!-- <p>Some of my favourites!</p> -->
                                 <div class="hoverIconContainer">
-                                    <<img
-                                            src="./assets/witcher.png" alt=""></a>
-                                    <img
-                                            src="./assets/dishonored.png" alt=""></a>
-                                   <img
-                                            src="./assets/divinity.png" alt=""></a>
-                                   <img
-                                            src="./assets/toTheMoon.png" alt=""></a>
-                                    <img
-                                            src="./assets/satisfactory.png" alt=""></a>
-                                   <img
-                                            src="./assets/wolf.png" alt=""></a>
-                                    <img
-                                            src="./assets/threekingdoms.png" alt=""></a>
-                                    <img
-                                            src="./assets/shadowTactics.png" alt=""></a>
+                                    <<img src="./assets/witcher.png" alt=""></a>
+                                    <img src="./assets/dishonored.png" alt=""></a>
+                                   <img src="./assets/divinity.png" alt=""></a>
+                                   <img src="./assets/toTheMoon.png" alt=""></a>
+                                    <img src="./assets/satisfactory.png" alt=""></a>
+                                   <img src="./assets/wolf.png" alt=""></a>
+                                    <img src="./assets/threekingdoms.png" alt=""></a>
+                                    <img src="./assets/shadowTactics.png" alt=""></a>
                                 </div>
                             </div>
                         </div>
                         <div class="img imgBike">
                             <img src="./assets/rideBike.png" alt="">
                             <div class="textCover textBike">
-                                <p>activities</p>
-                                <p class="bikeDesc">icons</p>
-                                
+                                <div class="hoverIconContainer">
+                                    <img src="./assets/aBike.png" alt="">
+                                    <img src="./assets/aCoffee.png" alt="">
+                                    <img src="./assets/aPizza.png" alt="">
+                                    <img src="./assets/aPool.png" alt="">
+                                    <img src="./assets/aMovies.png" alt="">
+                                    <img src="./assets/aMusic.png" alt="">
+                                    <img src="./assets/aNature.png" alt="">
+                                    <img src="./assets/aChess.png" alt="">
+                                </div>
                             </div>
                         </div>
         
@@ -301,12 +303,12 @@
                     <p>Feel free to use the contact form, my social links, or the direct link to my e-mail below.</p>
                     <a target="_blank" href="mailto:kokicodes@gmail.ca"><span>kokicodes@gmail.ca</span></a>
                 </div>
-                <form id="form" action="">
+                <form id="form" target="_blank" action="https://formspree.io/f/xvolrwal" method="post">
                     <div class="formInputs">
                         <input class="nameInput" type="name" placeholder="name">
                         <label class="sr-only" for="name"></label>
-                        <input class="emailInput" type="email" placeholder="e-mail">
-                        <label class="sr-only" for="email"></label>
+                        <input class="emailInput" name="Email" type="email" id="email" placeholder="e-mail">
+                        <label class="sr-only" for="Email"></label>
                     </div>
                     <textarea class="textarea" name="message" id="text cols="30" rows="10" placeholder="message" form="form"></textarea>
                     <div class="formButtons">
@@ -322,5 +324,6 @@
         <p>footer here</p>
     </footer>
     <script src="./script.js"></script>
+    <script async src="https://unpkg.com/typer-dot-js@0.1.0/typer.js"></script>
 </body>
 </html>

@@ -1208,9 +1208,8 @@ main {
   font-size: 1rem;
 }
 .aboutRightImages .textPC img {
-  width: 16.6666666667%;
-  height: 110px;
-  width: 110px;
+  width: 20%;
+  height: 50%;
   min-width: 100px;
   min-height: 100px;
   -o-object-fit: contain;
@@ -1223,9 +1222,18 @@ main {
           transform: scale(1.1);
 }
 .aboutRightImages .textBike img {
-  margin-top: 20px;
-  width: 70%;
-  height: 70%;
+  width: 25%;
+  height: 50%;
+  min-width: 100px;
+  min-height: 100px;
+  -o-object-fit: contain;
+     object-fit: contain;
+  -webkit-transition: all 0.1s linear;
+  transition: all 0.1s linear;
+}
+.aboutRightImages .textBike img:hover {
+  -webkit-transform: scale(1.1);
+          transform: scale(1.1);
 }
 .aboutRightImages .bikeDesc {
   margin-top: 10px;
@@ -1977,6 +1985,9 @@ form .formButtons {
       -ms-flex-pack: justify;
           justify-content: space-between;
 }
+form .formButtons button {
+  border: none;
+}
 form .buttonInputSend {
   width: 300px;
   margin: 20px 0;
@@ -2013,6 +2024,16 @@ footer {
     -webkit-transition: all 0.1s linear;
     transition: all 0.1s linear;
   }
+
+  .aboutRightImages .textBike img {
+    height: calc(50% - 40px);
+    width: 25%;
+    min-height: 10px;
+    min-width: 10px;
+  }
+  .aboutRightImages .textBike img:hover {
+    scale: 1.5;
+  }
 }
 @media (max-width: 1080px) {
   .navListContainer li {
@@ -2041,11 +2062,6 @@ footer {
     -webkit-box-pack: center;
         -ms-flex-pack: center;
             justify-content: center;
-  }
-
-  .aboutRightImages .hoverIconContainer a {
-    width: 70px;
-    min-width: 40px;
   }
 
   .skillsIcons li {
@@ -2284,7 +2300,8 @@ footer {
   .aboutRightImages img {
     height: 100%;
   }
-  .aboutRightImages .textPC img {
+  .aboutRightImages .textPC img,
+.aboutRightImages .textBike img {
     height: calc(50% - 10px);
     width: 20%;
     min-width: 50px;
@@ -2294,14 +2311,22 @@ footer {
     -ms-flex-wrap: wrap;
         flex-wrap: wrap;
   }
-  .aboutRightImages .textPC img:hover {
+  .aboutRightImages .textPC img:hover,
+.aboutRightImages .textBike img:hover {
     scale: 1.2;
+  }
+  .aboutRightImages .textBike img {
+    width: 25%;
   }
   .aboutRightImages .hoverIconContainer a {
     height: calc(50% - 30px);
     width: 25%;
     min-width: 100px;
     min-height: 100px;
+  }
+
+  .aboutLeft .aboutLeftText .firstAboutP {
+    margin-bottom: 20px;
   }
 
   .projectOneWrapper, .projectThreeWrapper {
@@ -2391,6 +2416,12 @@ footer {
     padding: 5px;
   }
 
+  .aboutLeft .aboutLeftText p {
+    font-weight: 300;
+    line-height: 1.2rem;
+    font-size: 1rem;
+  }
+
   .skillsIcons li:hover {
     -webkit-transform: none;
             transform: none;
@@ -2440,5 +2471,26 @@ footer {
         -ms-flex-pack: justify;
             justify-content: space-between;
     width: 300px;
+  }
+
+  .extrasContainer img {
+    height: 50px;
+    width: 50px;
+    margin: 10px 10px 12px 10px;
+    -webkit-transition: all 0.5s linear;
+    transition: all 0.5s linear;
+  }
+  .extrasContainer img:hover {
+    -webkit-transform: scale(1);
+            transform: scale(1);
+    color: #ee5a28;
+  }
+
+  .finalA {
+    left: -150px;
+  }
+
+  .finalR {
+    left: -40px;
   }
 }
