@@ -11,12 +11,15 @@ html { -moz-box-sizing: border-box; -webkit-box-sizing: border-box; box-sizing: 
 html{
     font-size: 125%;
     scroll-behavior: smooth;
+
 }
 body {
+    
     height: 100vh;
     // overflow: hidden;
     // overflow: hidden scroll;
 }
+
 section {
     padding-top: 100px;
 }

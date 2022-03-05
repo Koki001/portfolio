@@ -25,6 +25,8 @@
     img {
         height: 50px;
         width: 50px;
+        background-color: $secondary;
+        border-radius: 15px;
         transition: all 0.2s linear;
         &:hover {
             transform: scale(1.25);
@@ -44,6 +46,7 @@
     z-index: 10;
     
     .socialsButton {
+        cursor: pointer;
         display: flex;
         flex-direction: column;
         justify-content: center;

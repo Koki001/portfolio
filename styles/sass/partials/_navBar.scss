@@ -11,8 +11,8 @@ header {
     opacity: 1;
     transition: all 0.5s linear;
     z-index: 100;
-    border-bottom-left-radius: 50% 20%;
-    border-bottom-right-radius: 50% 20%;
+    border-bottom-left-radius: 60% 20%;
+    border-bottom-right-radius: 60% 20%;
 
 }
 .navFlex {
@@ -36,6 +36,7 @@ header {
 
 }
 .navTitle h4 {
+    cursor: pointer;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -118,6 +119,7 @@ header {
     bottom: -30%;
     transition: top 0.5s linear;
     .navButton {
+        cursor: pointer;
         display: flex;
         flex-direction: column;
         justify-content: center;

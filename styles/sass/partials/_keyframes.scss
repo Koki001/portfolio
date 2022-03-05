@@ -11,6 +11,14 @@
   90% { transform: translate(1px, 2px) rotate(0deg); }
   100% { transform: translate(1px, -2px) rotate(-1deg); }
 }
+@keyframes sign {
+    0% {transform: rotate(0deg);}
+    20% {transform: rotate(10deg);}
+    40% {transform: rotate(-10deg);}
+    60% {transform: rotate(10deg);}
+    80% {transform: rotate(-10deg);}
+    100% {transform: rotate(0deg);}
+}
 
 @keyframes fadeOut {
     0% {
@@ -37,6 +45,77 @@
   75% { color: $orange; }
   100% { color: $blue; }
 }
+
+// @keyframes wobbleR {
+//   0% {
+//     transform: translate3d(-15%, 0, 0) rotate3d(0, 0, 1, -3deg)
+//   }
+//   15% {
+//     transform: translate3d(-25%, 0, 0) rotate3d(0, 0, 1, -80deg)
+//   }
+//   30% {
+//     transform: translate3d(20%, 0, 0) rotate3d(0, 0, 1, 80deg)
+//   }
+//   45% {
+//     transform: translate3d(-15%, 0, 0) rotate3d(0, 0, 1, -120deg)
+//   }
+//   60% {
+//     transform: translate3d(10%, 0, 0) rotate3d(0, 0, 1, 120deg)
+//   }
+//   75% {
+//     transform: translate3d(-5%, 0, 0) rotate3d(0, 0, 1, -20deg)
+//   }
+//   100% {
+//     transform: translate3d(0, 0, 0) rotate3d(0, 0, 1,)
+//   }
+// }
+// @keyframes wobbleA {
+//   0% {
+//     transform: translate3d(15%, 0, 0) rotate3d(0, 0, 1,)
+//   }
+//   15% {
+//     transform: translate3d(25%, 0, 0) rotate3d(0, 0, 1,)
+//   }
+//   30% {
+//     transform: translate3d(-20%, 0, 0) rotate3d(0, 0, 1,)
+//   }
+//   45% {
+//     transform: translate3d(15%, 0, 0) rotate3d(0, 0, 1,)
+//   }
+//   60% {
+//     transform: translate3d(-10%, 0, 0) rotate3d(0, 0, 1,)
+//   }
+//   75% {
+//     transform: translate3d(5%, 0, 0) rotate3d(0, 0, 1,)
+//   }
+//   100% {
+//     transform: translate3d(0, 0, 0) rotate3d(0, 0, 1, 720deg)
+//   }
+// }
+// @keyframes wobbleD {
+//   0% {
+//     transform: translate3d(-15%, 0, 0) rotate3d(0, 0, 1, 3deg)
+//   }
+//   15% {
+//     transform: translate3d(-25%, 0, 0) rotate3d(0, 0, 1, 220deg)
+//   }
+//   30% {
+//     transform: translate3d(20%, 0, 0) rotate3d(0, 0, 1,)
+//   }
+//   45% {
+//     transform: translate3d(-15%, 0, 0) rotate3d(0, 0, 1,)
+//   }
+//   60% {
+//     transform: translate3d(10%, 0, 0) rotate3d(0, 0, 1, 360deg)
+//   }
+//   75% {
+//     transform: translate3d(-5%, 0, 0) rotate3d(0, 0, 1,)
+//   }
+//   100% {
+//     transform: translate3d(0, 0, 0) rotate3d(0, 0, 1,)
+//   }
+// }
+
 
 
 // @keyframes typing {
