@@ -46,6 +46,25 @@
   100% { color: $blue; }
 }
 
+@keyframes run {
+  0% {
+    right: 0;
+  }
+  48% {
+    transform: rotateY(0deg); 
+  }
+  50% { 
+    right: calc(100% - 100px);
+    transform: rotateY(180deg); 
+  }
+  98% {
+    transform: rotateY(180deg); 
+  }
+  100% {
+    right: 0;    
+     transform: rotateY(0deg);
+  }
+}
 // @keyframes wobbleR {
 //   0% {
 //     transform: translate3d(-15%, 0, 0) rotate3d(0, 0, 1, -3deg)

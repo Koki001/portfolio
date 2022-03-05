@@ -524,6 +524,52 @@ a {
     color: #00bef3;
   }
 }
+@-webkit-keyframes run {
+  0% {
+    right: 0;
+  }
+  48% {
+    -webkit-transform: rotateY(0deg);
+            transform: rotateY(0deg);
+  }
+  50% {
+    right: calc(100% - 100px);
+    -webkit-transform: rotateY(180deg);
+            transform: rotateY(180deg);
+  }
+  98% {
+    -webkit-transform: rotateY(180deg);
+            transform: rotateY(180deg);
+  }
+  100% {
+    right: 0;
+    -webkit-transform: rotateY(0deg);
+            transform: rotateY(0deg);
+  }
+}
+@keyframes run {
+  0% {
+    right: 0;
+  }
+  48% {
+    -webkit-transform: rotateY(0deg);
+            transform: rotateY(0deg);
+  }
+  50% {
+    right: calc(100% - 100px);
+    -webkit-transform: rotateY(180deg);
+            transform: rotateY(180deg);
+  }
+  98% {
+    -webkit-transform: rotateY(180deg);
+            transform: rotateY(180deg);
+  }
+  100% {
+    right: 0;
+    -webkit-transform: rotateY(0deg);
+            transform: rotateY(0deg);
+  }
+}
 header {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -756,6 +802,7 @@ header {
   position: fixed;
   top: 40%;
   left: 0;
+  z-index: 1000;
 }
 
 .socialsPosition {
@@ -1597,6 +1644,23 @@ main {
   -webkit-transition: all 0.3s linear;
   transition: all 0.3s linear;
   background-color: #ebe6e0;
+  position: relative;
+}
+
+.ashPikaGif {
+  position: absolute;
+  top: -90px;
+  right: calc(100% - 150px);
+  -webkit-transition: 3s linear;
+  transition: 3s linear;
+  height: 150px;
+  width: 150px;
+  -webkit-animation: linear infinite;
+          animation: linear infinite;
+  -webkit-animation-name: run;
+          animation-name: run;
+  -webkit-animation-duration: 12s;
+          animation-duration: 12s;
 }
 
 .projectOneWrapper {
@@ -1639,6 +1703,7 @@ main {
 
 .projectOneImage {
   width: 50%;
+  min-width: 20%;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -1650,8 +1715,12 @@ main {
   background-color: #ebe6e0;
   border-radius: 50px;
   padding: 15px;
-  width: 100%;
   height: 100%;
+  width: 60%;
+  min-width: 40%;
+  min-height: 70%;
+  -o-object-fit: contain;
+     object-fit: contain;
 }
 
 .projectTwo {
