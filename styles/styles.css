@@ -2064,6 +2064,10 @@ footer {
             justify-content: center;
   }
 
+  .boxText .re {
+    font-size: 0.85rem;
+  }
+
   .skillsIcons li {
     width: 25%;
     min-width: 40px;
