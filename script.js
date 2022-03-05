@@ -28,7 +28,18 @@ buttonS.addEventListener("click", function () {
 
 
 
-
+let picNum = 1
+let pic = document.querySelector('.welcomeLoop')
+function loopImage() {
+    if (picNum <= 8) {
+        pic.src = `./assets/welcomeweb${picNum}.png`
+        picNum++             
+    } else {
+        picNum = 1
+    }
+    setTimeout(loopImage, 500)
+}
+loopImage()
 
 
 
