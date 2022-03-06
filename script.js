@@ -21,7 +21,7 @@ buttonS.addEventListener("click", function () {
     mobileNav.classList.toggle("navAnimationS")
     pNavS.classList.toggle("pnVisibleS")
     if (document.querySelector(".navAnimationS")) {
-        buttonS.innerHTML = `<button class="navButtonS"><img class="arrowNav" src="./assets/down-arrow.png"></button>`
+        buttonS.innerHTML = `<button class="navButtonS"><img class="arrowNav" src="./assets/leftArrow.png"></button>`
     } else {
         buttonS.innerHTML = `<button class="navButtonS"><img src="./assets/cancel.png"></button>`
     }
