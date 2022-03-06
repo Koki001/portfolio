@@ -75,14 +75,19 @@
             width: 100%;
             position: absolute;
             object-fit: cover;
-            top: - 10px;
+            top: 0px;
         }
     }
     .pnVisibleS {
         display: block;
     }
     .arrowNav {
-        transform: rotate(90deg);
+        position: absolute;
+        right: -25px;
+        transition: all 0.2s linear;
+        &:hover {
+            transform: scale(2);
+        }
     }
     .navAnimationS {
         display: none;
@@ -92,26 +97,33 @@
     }
     .buttonAnimationS {
         position: absolute;
+        display: flex;
+        justify-content: center;
+        align-items: center;
         top: 15px;
         left: -65px;
-        transition: all 0.3s linear;
-        &:hover {
-            transform: scale(1.5);
-        }
+        
+
     }
     .pnVisibleS {
         transform: rotate(90deg);
         position: absolute;
-        right: -25px;
+        right: -35px;
         top: 100px;
         user-select: none;
         font-weight: $bold;
         background-color: rgba(17, 15, 15, 0.829);
-        color: $secondary;
+        color: $primary;
         border-radius: 20px;
         padding: 5px 10px;
     }
-
+    .socialsButtonContainer .pVisible {
+        left: -45px;
+    }
+    .socialsButtonContainer .socialsButton {
+        left: -40px;
+        top: 15px;
+    }
 
 
 
@@ -218,13 +230,13 @@
         margin-top: 50px;
     }
     form {
-        min-width: 300px;
+        min-width: 200px;
         .formButtons {
             flex-direction: column-reverse;
             justify-content: center;
             align-items: center;
             input {
-                margin: 0;
+                margin: 2px 0;
             }
         }
     }

@@ -26,6 +26,7 @@
         span {
             background-color: rgba(17, 15, 15, 0.829);
             border: 2px solid rgba(17, 15, 15, 0.829);
+            color: $secondary;
             border-radius: 20px;
             padding: 5px 15px;
             &:hover {
@@ -60,6 +61,7 @@ form {
         line-height: 1.5rem;
         padding: 10px 20px;
         border-radius: 10px;
+        margin-bottom: 20px;
         &:focus {
             outline: 2px solid $blue;
         }
@@ -94,22 +96,27 @@ form {
     .buttonInputSend {
         width: 300px;
         margin: 20px 0;
-        background-color: $secondary;
-        border: 2px solid $primary;
         padding: 5px 0;
         border-radius: 10px;
-        &:hover {
-            background-color: $green;
-            color: $primary;
-        }
+        background-color: $secondary;
+        color: $green;
+        border: 2px solid $green;
+        transition: all 0.2s linear;
+            &:hover {
+                background-color: $green;
+                border: 2px solid transparent;
+                color: $secondary;
+            }
+
     }
     .buttonInputClear {
         width: 300px;
         margin: 20px 0;
-        background-color: $secondary;
-        border: 2px solid $primary;
         padding: 5px 0;
         border-radius: 10px;
+        background-color: $secondary;
+        color: $orange;
+        border: 2px solid $orange;
         &:hover {
             background-color: $orange;
             color: $primary;

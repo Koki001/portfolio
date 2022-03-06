@@ -15,6 +15,9 @@
         font-size: 1rem;
     }
     .skillsIcons li {
+        width: calc(100% / 3 - 20px);
+        min-width: 50px;
+        
         &:hover {
             transform: none;
         }
@@ -26,6 +29,22 @@
     .typer {
         font-size: 0.8rem;
     }
+    form {
+        width: 80%;
+
+        .formButtons input {
+            width: 100%;
+        }
+    }
+    .formText p {
+        font-weight: $light;
+    }
+    .projectOneWrapper,
+    .projectTwoWrapper,
+    .projectThreeWrapper {
+        width: 90%;
+    }
+
 }
 
 @media (max-width: 400px) {
@@ -40,20 +59,29 @@
             margin: 0;
         }
     }
-    .skillsIcons li i {
-        font-size: 2rem;
+    .skillsIcons li {
+        font-size: 0.85rem;
+        i {
+            font-size: 2.2rem;
+        }
+    }
+    .skillsIcons .jsLogo {
+        font-size: 0.6rem;
+    }
+    .skillsWrapper h2 {
+        font-size: 1.5rem;
     }
     .boxText {
         display: flex;
         width: 100%;
         justify-content: center;
         .re, .ac, .bu {
-            font-size: 0.9rem;
-            margin: 0;
+            font-size: 0.85rem;
+            margin: 0 5px;
         }
         p {
             display: flex;
-            justify-content: space-between;
+            justify-content: center;
             width: 300px;
         }
     }
@@ -70,9 +98,20 @@
         }
     }
     .finalA {
-        left: -150px;
+        left: -120px;
     }
     .finalR {
         left: -40px;
+    }
+    .finalD {
+        left: 40px;
+    }
+    
+}
+@media (max-width: 400px) {
+    .boxText {
+        .re, .ac, .bu {
+            font-size: 0.75rem;
+        }
     }
 }

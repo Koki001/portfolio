@@ -1092,6 +1092,8 @@ main {
   text-align: center;
   margin: 20px;
   height: calc(50% - 40px);
+  -webkit-animation: slide-in-left 1s ease-in-out both;
+          animation: slide-in-left 1s ease-in-out both;
 }
 .aboutLeft .aboutLeftText h3 {
   margin-bottom: 30px;
@@ -1631,7 +1633,7 @@ main {
   color: #91b461;
   padding: 4px 10px;
   border-radius: 15px;
-  background-color: #ebe6e0;
+  background-color: #f6f5f1;
   border: 2px solid #91b461;
   -webkit-transition: all 0.2s linear;
   transition: all 0.2s linear;
@@ -1643,7 +1645,7 @@ main {
 }
 .projects a.codeLink {
   font-size: 0.8rem;
-  background-color: #ebe6e0;
+  background-color: #f6f5f1;
   text-decoration: none;
   color: #ee5a28;
   padding: 4px 10px;
@@ -1907,6 +1909,7 @@ main {
 .formText a span {
   background-color: rgba(17, 15, 15, 0.829);
   border: 2px solid rgba(17, 15, 15, 0.829);
+  color: #f6f5f1;
   border-radius: 20px;
   padding: 5px 15px;
 }
@@ -1948,6 +1951,7 @@ form textarea {
   line-height: 1.5rem;
   padding: 10px 20px;
   border-radius: 10px;
+  margin-bottom: 20px;
 }
 form textarea:focus {
   outline: 2px solid #00bef3;
@@ -1991,22 +1995,27 @@ form .formButtons button {
 form .buttonInputSend {
   width: 300px;
   margin: 20px 0;
-  background-color: #f6f5f1;
-  border: 2px solid #ebe6e0;
   padding: 5px 0;
   border-radius: 10px;
+  background-color: #f6f5f1;
+  color: #91b461;
+  border: 2px solid #91b461;
+  -webkit-transition: all 0.2s linear;
+  transition: all 0.2s linear;
 }
 form .buttonInputSend:hover {
   background-color: #91b461;
-  color: #ebe6e0;
+  border: 2px solid transparent;
+  color: #f6f5f1;
 }
 form .buttonInputClear {
   width: 300px;
   margin: 20px 0;
-  background-color: #f6f5f1;
-  border: 2px solid #ebe6e0;
   padding: 5px 0;
   border-radius: 10px;
+  background-color: #f6f5f1;
+  color: #ee5a28;
+  border: 2px solid #ee5a28;
 }
 form .buttonInputClear:hover {
   background-color: #ee5a28;
@@ -2206,7 +2215,7 @@ form .buttonInputClear:hover {
     position: absolute;
     -o-object-fit: cover;
        object-fit: cover;
-    top: -10px;
+    top: 0px;
   }
 
   .pnVisibleS {
@@ -2214,8 +2223,14 @@ form .buttonInputClear:hover {
   }
 
   .arrowNav {
-    -webkit-transform: rotate(90deg);
-            transform: rotate(90deg);
+    position: absolute;
+    right: -25px;
+    -webkit-transition: all 0.2s linear;
+    transition: all 0.2s linear;
+  }
+  .arrowNav:hover {
+    -webkit-transform: scale(2);
+            transform: scale(2);
   }
 
   .navAnimationS {
@@ -2228,21 +2243,24 @@ form .buttonInputClear:hover {
 
   .buttonAnimationS {
     position: absolute;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
     top: 15px;
     left: -65px;
-    -webkit-transition: all 0.3s linear;
-    transition: all 0.3s linear;
-  }
-  .buttonAnimationS:hover {
-    -webkit-transform: scale(1.5);
-            transform: scale(1.5);
   }
 
   .pnVisibleS {
     -webkit-transform: rotate(90deg);
             transform: rotate(90deg);
     position: absolute;
-    right: -25px;
+    right: -35px;
     top: 100px;
     -webkit-user-select: none;
        -moz-user-select: none;
@@ -2250,9 +2268,18 @@ form .buttonInputClear:hover {
             user-select: none;
     font-weight: 900;
     background-color: rgba(17, 15, 15, 0.829);
-    color: #f6f5f1;
+    color: #ebe6e0;
     border-radius: 20px;
     padding: 5px 10px;
+  }
+
+  .socialsButtonContainer .pVisible {
+    left: -45px;
+  }
+
+  .socialsButtonContainer .socialsButton {
+    left: -40px;
+    top: 15px;
   }
 
   header {
@@ -2373,7 +2400,7 @@ form .buttonInputClear:hover {
   }
 
   form {
-    min-width: 300px;
+    min-width: 200px;
   }
   form .formButtons {
     -webkit-box-orient: vertical;
@@ -2388,7 +2415,7 @@ form .buttonInputClear:hover {
             align-items: center;
   }
   form .formButtons input {
-    margin: 0;
+    margin: 2px 0;
   }
 
   .formInputs {
@@ -2421,6 +2448,10 @@ form .buttonInputClear:hover {
     font-size: 1rem;
   }
 
+  .skillsIcons li {
+    width: calc(33.3333333333% - 20px);
+    min-width: 50px;
+  }
   .skillsIcons li:hover {
     -webkit-transform: none;
             transform: none;
@@ -2433,6 +2464,23 @@ form .buttonInputClear:hover {
 
   .typer {
     font-size: 0.8rem;
+  }
+
+  form {
+    width: 80%;
+  }
+  form .formButtons input {
+    width: 100%;
+  }
+
+  .formText p {
+    font-weight: 300;
+  }
+
+  .projectOneWrapper,
+.projectTwoWrapper,
+.projectThreeWrapper {
+    width: 90%;
   }
 }
 @media (max-width: 400px) {
@@ -2449,8 +2497,19 @@ form .buttonInputClear:hover {
     margin: 0;
   }
 
+  .skillsIcons li {
+    font-size: 0.85rem;
+  }
   .skillsIcons li i {
-    font-size: 2rem;
+    font-size: 2.2rem;
+  }
+
+  .skillsIcons .jsLogo {
+    font-size: 0.6rem;
+  }
+
+  .skillsWrapper h2 {
+    font-size: 1.5rem;
   }
 
   .boxText {
@@ -2463,16 +2522,16 @@ form .buttonInputClear:hover {
             justify-content: center;
   }
   .boxText .re, .boxText .ac, .boxText .bu {
-    font-size: 0.9rem;
-    margin: 0;
+    font-size: 0.85rem;
+    margin: 0 5px;
   }
   .boxText p {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
-    -webkit-box-pack: justify;
-        -ms-flex-pack: justify;
-            justify-content: space-between;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
     width: 300px;
   }
 
@@ -2490,10 +2549,19 @@ form .buttonInputClear:hover {
   }
 
   .finalA {
-    left: -150px;
+    left: -120px;
   }
 
   .finalR {
     left: -40px;
+  }
+
+  .finalD {
+    left: 40px;
+  }
+}
+@media (max-width: 400px) {
+  .boxText .re, .boxText .ac, .boxText .bu {
+    font-size: 0.75rem;
   }
 }

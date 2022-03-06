@@ -34,7 +34,7 @@
         color: $green;
         padding: 4px 10px;
         border-radius: 15px;
-        background-color: $primary;
+        background-color: $secondary;
         border: 2px solid $green;
         transition: all 0.2s linear;
             &:hover {
@@ -45,7 +45,7 @@
     }
     a.codeLink {
         font-size: 0.8rem;
-        background-color: $primary;
+        background-color: $secondary;
         text-decoration: none;
         color: $orange;
         padding: 4px 10px;
