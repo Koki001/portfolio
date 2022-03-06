@@ -84,10 +84,10 @@ boxClosed.addEventListener("click", function() {
     imageAccessibility.classList.add("hiddenA")
     imageResponsive.classList.add("hiddenR")
     imageDebug.classList.add("hiddenD")
-    boxClosed.addEventListener("mouseout", function() {
+    // boxClosed.addEventListener("mouseout", function() {
         boxClosed.style.display = "none"
-        boxOpen.style.opacity = "0"
         setTimeout(function () {
+            boxOpen.style.opacity = "0"
             paragraphBox.classList.remove("hiddenBoxText")
             designBox.classList.remove("hiddenBoxText")
             imageAccessibility.classList.add("finalA")
@@ -97,7 +97,7 @@ boxClosed.addEventListener("click", function() {
         setTimeout(function(){
             boxOpen.style.display = "none"
         }, 1000)
-    })
+    // })
 })
 // for clear button
 const buttonForm = document.querySelector(".buttonInputClear")
