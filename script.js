@@ -30,7 +30,7 @@ buttonS.addEventListener("click", function () {
 let picNum = 1
 let pic = document.querySelector('.welcomeLoop')
 function loopImage() {
-    if (picNum <= 17) {
+    if (picNum <= 21) {
         pic.src = `./assets/welcomeweb${picNum}.png`
         picNum++             
     } else {

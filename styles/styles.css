@@ -1082,8 +1082,7 @@ main {
       -ms-flex-align: center;
           align-items: center;
   background-color: #ebe6e0;
-  border-radius: 50px;
-  border-radius: 50px;
+  border-radius: 40px;
   width: calc(100% - 40px);
   height: calc(50% - 40px);
   -o-object-fit: contain;
@@ -1167,7 +1166,7 @@ main {
   height: 100%;
 }
 .aboutRightImages img {
-  border-radius: 50px;
+  border-radius: 40px;
   width: calc(100% - 40px);
   height: calc(50% - 40px);
   max-height: 350px;
@@ -1180,7 +1179,7 @@ main {
   width: 100%;
   background-color: rgba(235, 230, 224, 0.829);
   color: #f6f5f1;
-  border-radius: 50px;
+  border-radius: 40px;
   position: absolute;
   -webkit-transform: translateY(-50%);
           transform: translateY(-50%);
@@ -1256,7 +1255,7 @@ main {
   height: 100%;
 }
 .aboutRightImages .img {
-  border-radius: 50px;
+  border-radius: 40px;
   width: calc(100% - 40px);
   height: calc(50% - 40px);
   max-height: 350px;
@@ -1805,9 +1804,13 @@ main {
 .projectTwoImage .img {
   background-color: #ebe6e0;
   border-radius: 50px;
-  padding: 20px;
-  width: 80%;
+  padding: 15px;
   height: 100%;
+  width: 60%;
+  min-width: 40%;
+  min-height: 70%;
+  -o-object-fit: contain;
+     object-fit: contain;
 }
 
 .projectThree {
@@ -1861,9 +1864,13 @@ main {
 .projectThreeImage .img {
   background-color: #ebe6e0;
   border-radius: 50px;
-  padding: 20px;
-  width: 80%;
+  padding: 15px;
   height: 100%;
+  width: 60%;
+  min-width: 40%;
+  min-height: 70%;
+  -o-object-fit: contain;
+     object-fit: contain;
 }
 
 .contact {
@@ -1939,7 +1946,7 @@ form {
   -webkit-box-align: start;
       -ms-flex-align: start;
           align-items: flex-start;
-  width: 50%;
+  width: 35%;
   min-width: 620px;
   margin-left: 50px;
 }
@@ -2118,9 +2125,12 @@ form .buttonInputClear:hover {
         -ms-flex-pack: center;
             justify-content: center;
   }
+  .formText p {
+    text-align: center;
+  }
 
   form {
-    width: 90%;
+    width: 70%;
     margin: 20px 0;
   }
 }
@@ -2233,9 +2243,9 @@ form .buttonInputClear:hover {
             transform: scale(2);
   }
 
-  .navAnimationS {
-    display: none;
+  .mobileNav .navAnimationS {
     opacity: 0;
+    right: -200px;
     position: absolute;
     -webkit-transition: all 0.5s linear;
     transition: all 0.5s linear;
@@ -2271,6 +2281,8 @@ form .buttonInputClear:hover {
     color: #ebe6e0;
     border-radius: 20px;
     padding: 5px 10px;
+    -webkit-transition: all 0.2s linear;
+    transition: all 0.2s linear;
   }
 
   .socialsButtonContainer .pVisible {
@@ -2364,15 +2376,26 @@ form .buttonInputClear:hover {
 
   .projectTwoWrapper {
     -webkit-box-orient: vertical;
-    -webkit-box-direction: reverse;
-        -ms-flex-direction: column-reverse;
-            flex-direction: column-reverse;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
   }
 
   .projectOneText, .projectOneImage,
 .projectTwoText, .projectTwoImage,
 .projectThreeText, .projectThreeImage {
     width: 100%;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    text-align: center;
+  }
+
+  .projectTwoImage, .projectThreeImage {
+    height: 200px;
   }
 
   .skillsWrapper {
@@ -2546,6 +2569,18 @@ form .buttonInputClear:hover {
     -webkit-transform: scale(1);
             transform: scale(1);
     color: #ee5a28;
+  }
+
+  .hiddenA {
+    left: -130px;
+  }
+
+  .hiddenR {
+    left: -30px;
+  }
+
+  .hiddenD {
+    left: 70px;
   }
 
   .finalA {
