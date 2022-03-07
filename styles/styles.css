@@ -852,6 +852,7 @@ header {
 
 .socialsButtonContainer {
   position: absolute;
+  top: -3%;
   right: -5%;
   width: 25px;
   height: 25px;
@@ -2130,10 +2131,6 @@ form .buttonInputClear:hover {
   }
 }
 @media (max-width: 900px) {
-  .socials {
-    top: 7%;
-  }
-
   .pnHidden {
     display: none;
   }
@@ -2294,7 +2291,7 @@ form .buttonInputClear:hover {
   }
 
   header {
-    height: 8vh;
+    height: 6vh;
     -webkit-transition: all 0.3s linear;
     transition: all 0.3s linear;
     width: 100%;
