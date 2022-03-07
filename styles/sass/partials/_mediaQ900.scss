@@ -124,7 +124,7 @@
     }
     .socialsButtonContainer .pVisible {
         left: -70px;
-        top: 85px;
+        top: 80px;
         font-size: 1rem;
     }
     .socialsButtonContainer .socialsButton {
@@ -246,6 +246,9 @@
             input {
                 margin: 2px 0;
             }
+        }
+        .nameInput {
+            margin-bottom: 3px;
         }
     }
     .formInputs {

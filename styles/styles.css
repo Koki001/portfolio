@@ -2283,7 +2283,7 @@ form .buttonInputClear:hover {
 
   .socialsButtonContainer .pVisible {
     left: -70px;
-    top: 85px;
+    top: 80px;
     font-size: 1rem;
   }
 
@@ -2438,6 +2438,9 @@ form .buttonInputClear:hover {
   form .formButtons input {
     margin: 2px 0;
   }
+  form .nameInput {
+    margin-bottom: 3px;
+  }
 
   .formInputs {
     -webkit-box-orient: vertical;
@@ -2516,6 +2519,22 @@ form .buttonInputClear:hover {
   }
   .boxText .re {
     margin: 0;
+  }
+
+  .pnVisibleS {
+    right: -40px;
+  }
+
+  .buttonAnimationS {
+    left: -60px;
+  }
+
+  .socialsButtonContainer .pVisible {
+    left: -74px;
+  }
+
+  .socialsButtonContainer .socialsButton {
+    left: -44px;
   }
 
   .skillsIcons li {
@@ -2611,6 +2630,6 @@ form .buttonInputClear:hover {
 }
 @media (max-height: 500px) {
   .socials {
-    top: 20%;
+    top: 73px;
   }
 }

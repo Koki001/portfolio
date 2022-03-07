@@ -59,6 +59,18 @@
             margin: 0;
         }
     }
+    .pnVisibleS {
+        right: -40px;
+    }
+    .buttonAnimationS {
+        left: -60px;
+    }
+    .socialsButtonContainer .pVisible {
+        left: -74px;
+    }
+    .socialsButtonContainer .socialsButton {
+        left: -44px;
+    }
     .skillsIcons li {
         font-size: 0.85rem;
         i {
@@ -140,6 +152,6 @@
 
 @media (max-height: 500px) {
     .socials {
-        top: 20%;
+        top: 73px;
     }
 }
