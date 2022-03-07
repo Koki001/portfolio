@@ -802,7 +802,7 @@ header {
 
 .socials {
   position: fixed;
-  top: 40%;
+  top: 30%;
   left: 0;
   z-index: 1000;
 }
@@ -852,7 +852,6 @@ header {
 
 .socialsButtonContainer {
   position: absolute;
-  top: -3%;
   right: -5%;
   width: 25px;
   height: 25px;
