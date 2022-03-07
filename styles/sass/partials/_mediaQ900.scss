@@ -1,5 +1,8 @@
 @media (max-width: 900px) {
 
+    .socials {
+        top: 7%;
+    }
     .pnHidden {
         display: none;
     }
@@ -137,7 +140,7 @@
 
     
     header {
-        height: 6vh;
+        height: 8vh;
         transition: all 0.3s linear;
         width: 100%;
         position: sticky;
