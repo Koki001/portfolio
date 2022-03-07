@@ -888,9 +888,6 @@ header {
   width: 20px;
 }
 .socialsButtonContainer .pHidden {
-  -webkit-writing-mode: vertical-rl;
-      -ms-writing-mode: tb-rl;
-          writing-mode: vertical-rl;
   -webkit-transform: scale(-1);
           transform: scale(-1);
   font-weight: 900;
@@ -900,9 +897,11 @@ header {
 }
 .socialsButtonContainer .pVisible {
   visibility: visible;
+  -webkit-transform: rotate(-90deg);
+          transform: rotate(-90deg);
   position: absolute;
-  left: -40px;
-  top: 6vh;
+  left: -70px;
+  top: 67px;
   -webkit-user-select: none;
      -moz-user-select: none;
       -ms-user-select: none;
@@ -910,9 +909,10 @@ header {
   background-color: rgba(17, 15, 15, 0.829);
   color: #f6f5f1;
   border-radius: 20px;
-  padding: 10px 0px;
+  padding: 5px 10px;
   -webkit-transition: left 0.4s linear;
   transition: left 0.4s linear;
+  font-size: 1rem;
 }
 
 .socialButtonAnimation {
@@ -2282,7 +2282,9 @@ form .buttonInputClear:hover {
   }
 
   .socialsButtonContainer .pVisible {
-    left: -45px;
+    left: -70px;
+    top: 85px;
+    font-size: 1rem;
   }
 
   .socialsButtonContainer .socialsButton {
@@ -2291,7 +2293,7 @@ form .buttonInputClear:hover {
   }
 
   header {
-    height: 6vh;
+    height: 50px;
     -webkit-transition: all 0.3s linear;
     transition: all 0.3s linear;
     width: 100%;

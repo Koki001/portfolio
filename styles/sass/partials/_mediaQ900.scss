@@ -123,7 +123,9 @@
         transition: all 0.2s linear;
     }
     .socialsButtonContainer .pVisible {
-        left: -45px;
+        left: -70px;
+        top: 85px;
+        font-size: 1rem;
     }
     .socialsButtonContainer .socialsButton {
         left: -40px;
@@ -137,7 +139,7 @@
 
     
     header {
-        height: 6vh;
+        height: 50px;
         transition: all 0.3s linear;
         width: 100%;
         position: sticky;

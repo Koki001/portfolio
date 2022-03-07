@@ -62,7 +62,7 @@
         }
     }
     .pHidden {
-        writing-mode: vertical-rl;
+        
         transform: scale(-1);
         font-weight: $bold;
         font-size: 1.2rem;
@@ -71,15 +71,17 @@
     }
     .pVisible {
         visibility: visible;
+        transform: rotate(-90deg);
         position: absolute;
-        left: -40px;
-        top: 6vh;
+        left: -70px;
+        top: 67px;
         user-select: none;
         background-color: rgba(17, 15, 15, 0.829);
         color: $secondary;
         border-radius: 20px;
-        padding: 10px 0px;
+        padding: 5px 10px;
         transition: left 0.4s linear;
+        font-size: 1rem;
     }
 }
 .socialButtonAnimation {
