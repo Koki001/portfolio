@@ -2609,3 +2609,8 @@ form .buttonInputClear:hover {
     font-size: 1.5rem;
   }
 }
+@media (max-height: 500px) {
+  .socials {
+    top: 20%;
+  }
+}
