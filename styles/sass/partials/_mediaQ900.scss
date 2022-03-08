@@ -154,7 +154,9 @@
     }
 
 
-
+    .about2 h2 {
+        text-align: center;
+    }
 
 
 
@@ -218,6 +220,10 @@
     .projectTwoImage, .projectThreeImage {
         height: 200px;
     }
+    .skills {
+        padding: 100px 0;
+    }
+
     .skillsWrapper {
         flex-direction: column;
     }
@@ -236,6 +242,10 @@
         width: 100%;
         padding-bottom: 100px;
         margin-top: 50px;
+    }
+    .formText {
+        align-items: center;
+        justify-content: center;
     }
     form {
         min-width: 200px;
@@ -258,6 +268,46 @@
             width: 100%;
         }
 
+    }
+    .aboutTop {
+        flex-direction: column-reverse;
+        .topText {
+            width: 100%;
+        }
+        .topImg {
+            width: 50%;
+            margin-bottom: 40px;
+        }
+    }
+
+    .aboutBottom .aboutBottomImages {
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .aboutBottom .aboutBottomImages .imgHolder {
+        width: calc(45% - 60px);
+        height: 45%;
+        flex-wrap: wrap;
+        min-width: 100px;
+        min-height: 100px;
+    }
+    .finalR {
+    opacity: 1;
+    position: absolute;
+    top: -80px;
+    }
+    .finalA {
+        opacity: 1;
+        position: absolute;
+        top: -80px;
+        left: -200px;
+    }
+    .finalD {
+        opacity: 1;
+        position: absolute;
+        top: -80px;
+        left: 70px;
     }
 
 

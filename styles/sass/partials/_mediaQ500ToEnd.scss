@@ -44,6 +44,25 @@
     .projectThreeWrapper {
         width: 90%;
     }
+        .aboutTop .topText {
+        padding: 40px 20px;
+    }
+    .aboutBottom .aboutBottomImages .imgHolder {
+        margin: 10px;
+        width: calc(50% - 60px);
+    }
+    .skillsWrapper h5 {
+        top: 100px;
+    }
+    .finalA {
+        top: -20px;
+    }
+    .finalR {
+        top: -20px;
+    }
+    .finalD {
+        top: -20px;
+    }
 
 }
 
@@ -77,6 +96,7 @@
             font-size: 2.2rem;
         }
     }
+
     .skillsIcons .jsLogo {
         font-size: 0.6rem;
     }
@@ -131,6 +151,10 @@
     .finalD {
         left: 40px;
     }
+    .aboutTop .topImg {
+        width: 70%;
+    }
+
     
 }
 @media (max-width: 400px) {

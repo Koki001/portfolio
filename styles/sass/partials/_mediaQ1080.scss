@@ -63,5 +63,26 @@
     form {
         width: 70%;
         margin: 20px 0;
+
     }
+    .formText {
+        padding: 100px 0;
+    }
+
+    .formText .emailLink {
+        justify-content: center;
+        width: 100%;
+        margin-top: 40px;
+    }
+    .contactSocials {
+        justify-content: center;
+    }
+    .aboutTop .topText {
+        width: 60%;
+        transition: all 0.2s linear;
+    }
+    form .formButtons {
+        justify-content: center;
+    }
+    
 }

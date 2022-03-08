@@ -40,20 +40,20 @@ function loopImage() {
 }
 loopImage()
 // this is for my socials nav button
-const pSocial = document.querySelector(".pHidden")
-const buttonSocial = document.querySelector(".socialsButton")
-buttonSocial.addEventListener("click", function () {
-    const socials = document.querySelector(".socialsList")
-    buttonSocial.classList.toggle("socialButtonAnimation")
-    socials.classList.toggle("socialAnimation")
-    pSocial.classList.toggle("pVisible")
+// const pSocial = document.querySelector(".pHidden")
+// const buttonSocial = document.querySelector(".socialsButton")
+// buttonSocial.addEventListener("click", function () {
+//     const socials = document.querySelector(".socialsList")
+//     buttonSocial.classList.toggle("socialButtonAnimation")
+//     socials.classList.toggle("socialAnimation")
+//     pSocial.classList.toggle("pVisible")
 
-    if (document.querySelector(".socialAnimation")) {
-        buttonSocial.innerHTML = `<button class="socialsButton"><img src="./assets/next.png"></button>`
-    } else {
-        buttonSocial.innerHTML = `<button class="socialsButton"><img src="./assets/cancel.png"></button>`
-    }
-})
+//     if (document.querySelector(".socialAnimation")) {
+//         buttonSocial.innerHTML = `<button class="socialsButton"><img src="./assets/next.png"></button>`
+//     } else {
+//         buttonSocial.innerHTML = `<button class="socialsButton"><img src="./assets/cancel.png"></button>`
+//     }
+// })
 // this is for my header name/phone number
 const phoneSpan = document.querySelector(".navTitle")
 phoneSpan.addEventListener("click", function() {
@@ -100,14 +100,14 @@ boxClosed.addEventListener("click", function() {
     // })
 })
 // for clear button
-const buttonForm = document.querySelector(".buttonInputClear")
-buttonForm.addEventListener("click", function(e) {
-    e.preventDefault()
-    console.log(nameInput.value)
-    document.querySelector(".textarea").value = ""
-    document.querySelector(".nameInput").value = ""
-    document.querySelector(".emailInput").value = ""
-})
+// const buttonForm = document.querySelector(".buttonInputClear")
+// buttonForm.addEventListener("click", function(e) {
+//     e.preventDefault()
+//     console.log(nameInput.value)
+//     document.querySelector(".textarea").value = ""
+//     document.querySelector(".nameInput").value = ""
+//     document.querySelector(".emailInput").value = ""
+// })
 // error handling for form submit button
 const buttonSubmit = document.querySelector(".buttonInputSend")
 const nameInput = document.querySelector("input[type=name]")
@@ -131,19 +131,19 @@ buttonSubmit.addEventListener("click", function(e) {
     }
 })
 // setup for navs to be minimized when reaching a screen width of 900px
-if (window.innerWidth <= 900) {
-    const socials = document.querySelector(".socialsList")
-    buttonSocial.classList.add("socialButtonAnimation")
-    socials.classList.add("socialAnimation")
-    pSocial.classList.add("pVisible")
+// if (window.innerWidth <= 900) {
+//     const socials = document.querySelector(".socialsList")
+//     buttonSocial.classList.add("socialButtonAnimation")
+//     socials.classList.add("socialAnimation")
+//     pSocial.classList.add("pVisible")
 
-        if (document.querySelector(".socialAnimation")) {
-            buttonSocial.innerHTML = `<button class="socialsButton"><img src="./assets/next.png"></button>`
-        } else {
-            buttonSocial.innerHTML = `<button class="socialsButton"><img src="./assets/cancel.png"></button>`
-        }
-}  else {
-}
+//         if (document.querySelector(".socialAnimation")) {
+//             buttonSocial.innerHTML = `<button class="socialsButton"><img src="./assets/next.png"></button>`
+//         } else {
+//             buttonSocial.innerHTML = `<button class="socialsButton"><img src="./assets/cancel.png"></button>`
+//         }
+// }  else {
+// }
 
 
 
