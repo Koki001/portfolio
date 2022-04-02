@@ -567,6 +567,52 @@ a {
             transform: rotateY(0deg);
   }
 }
+@-webkit-keyframes runTwo {
+  0% {
+    left: 0;
+  }
+  48% {
+    -webkit-transform: rotateY(0deg);
+            transform: rotateY(0deg);
+  }
+  50% {
+    left: calc(100% - 100px);
+    -webkit-transform: rotateY(180deg);
+            transform: rotateY(180deg);
+  }
+  98% {
+    -webkit-transform: rotateY(180deg);
+            transform: rotateY(180deg);
+  }
+  100% {
+    left: 0;
+    -webkit-transform: rotateY(0deg);
+            transform: rotateY(0deg);
+  }
+}
+@keyframes runTwo {
+  0% {
+    left: 0;
+  }
+  48% {
+    -webkit-transform: rotateY(0deg);
+            transform: rotateY(0deg);
+  }
+  50% {
+    left: calc(100% - 100px);
+    -webkit-transform: rotateY(180deg);
+            transform: rotateY(180deg);
+  }
+  98% {
+    -webkit-transform: rotateY(180deg);
+            transform: rotateY(180deg);
+  }
+  100% {
+    left: 0;
+    -webkit-transform: rotateY(0deg);
+            transform: rotateY(0deg);
+  }
+}
 .mobileNav, .pnHiddenS {
   display: none;
 }
@@ -1510,6 +1556,38 @@ main {
           animation-duration: 12s;
 }
 
+.podcastGif {
+  position: absolute;
+  top: -80px;
+  right: calc(100% - 150px);
+  -webkit-transition: 3s linear;
+  transition: 3s linear;
+  height: 150px;
+  width: 150px;
+  -webkit-animation: linear infinite;
+          animation: linear infinite;
+  -webkit-animation-name: runTwo;
+          animation-name: runTwo;
+  -webkit-animation-duration: 12s;
+          animation-duration: 12s;
+}
+
+.weatherGif {
+  position: absolute;
+  top: -80px;
+  right: calc(100% - 150px);
+  -webkit-transition: 3s linear;
+  transition: 3s linear;
+  height: 150px;
+  width: 150px;
+  -webkit-animation: linear infinite;
+          animation: linear infinite;
+  -webkit-animation-name: runTwo;
+          animation-name: runTwo;
+  -webkit-animation-duration: 12s;
+          animation-duration: 12s;
+}
+
 .projectOneWrapper {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -1560,7 +1638,6 @@ main {
 }
 .projectOneImage .img {
   background-color: #ebe6e0;
-  border-radius: 50px;
   padding: 15px;
   height: 100%;
   width: 60%;
@@ -1576,6 +1653,7 @@ main {
   -webkit-transition: all 0.3s linear;
   transition: all 0.3s linear;
   background-color: #ebe6e0;
+  position: relative;
 }
 
 .projectTwoWrapper {
@@ -1607,6 +1685,15 @@ main {
   width: 50%;
   padding: 20px;
 }
+.projectTwoText a {
+  text-decoration: none;
+  color: black;
+  -webkit-transition: all 0.2s linear;
+  transition: all 0.2s linear;
+}
+.projectTwoText a:hover {
+  color: #00bef3;
+}
 
 .projectTwoImage {
   width: 50%;
@@ -1634,6 +1721,7 @@ main {
   -webkit-transition: all 0.3s linear;
   transition: all 0.3s linear;
   background-color: #ebe6e0;
+  position: relative;
 }
 
 .projectThreeWrapper {
@@ -1677,7 +1765,6 @@ main {
 }
 .projectThreeImage .img {
   background-color: #ebe6e0;
-  border-radius: 50px;
   padding: 15px;
   height: 100%;
   width: 60%;
