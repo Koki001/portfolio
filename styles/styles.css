@@ -576,7 +576,7 @@ a {
             transform: rotateY(0deg);
   }
   50% {
-    left: calc(100% - 100px);
+    left: calc(100% - 150px);
     -webkit-transform: rotateY(180deg);
             transform: rotateY(180deg);
   }
@@ -599,7 +599,7 @@ a {
             transform: rotateY(0deg);
   }
   50% {
-    left: calc(100% - 100px);
+    left: calc(100% - 150px);
     -webkit-transform: rotateY(180deg);
             transform: rotateY(180deg);
   }
