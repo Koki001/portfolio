@@ -1096,6 +1096,12 @@ main {
 .aboutTop .topImg {
   border: 1px solid black;
   width: 30%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
 }
 .aboutTop .topImg img {
   -o-object-fit: contain;

@@ -38,6 +38,8 @@
     .topImg {
         border: 1px solid black;
         width: 30%;
+        display: flex;
+        justify-content: center;
         img {
             object-fit: contain;
             width: 90%;
