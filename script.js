@@ -39,21 +39,7 @@ function loopImage() {
     setTimeout(loopImage, 500)
 }
 loopImage()
-// this is for my socials nav button
-// const pSocial = document.querySelector(".pHidden")
-// const buttonSocial = document.querySelector(".socialsButton")
-// buttonSocial.addEventListener("click", function () {
-//     const socials = document.querySelector(".socialsList")
-//     buttonSocial.classList.toggle("socialButtonAnimation")
-//     socials.classList.toggle("socialAnimation")
-//     pSocial.classList.toggle("pVisible")
 
-//     if (document.querySelector(".socialAnimation")) {
-//         buttonSocial.innerHTML = `<button class="socialsButton"><img src="./assets/next.png"></button>`
-//     } else {
-//         buttonSocial.innerHTML = `<button class="socialsButton"><img src="./assets/cancel.png"></button>`
-//     }
-// })
 // this is for my header name/phone number
 const phoneSpan = document.querySelector(".navTitle")
 phoneSpan.addEventListener("click", function() {
@@ -84,7 +70,7 @@ boxClosed.addEventListener("click", function() {
     imageAccessibility.classList.add("hiddenA")
     imageResponsive.classList.add("hiddenR")
     imageDebug.classList.add("hiddenD")
-    // boxClosed.addEventListener("mouseout", function() {
+
         boxClosed.style.display = "none"
         setTimeout(function () {
             boxOpen.style.opacity = "0"
@@ -97,18 +83,9 @@ boxClosed.addEventListener("click", function() {
         setTimeout(function(){
             boxOpen.style.display = "none"
         }, 1000)
-    // })
+
 })
-// for clear button
-// const buttonForm = document.querySelector(".buttonInputClear")
-// buttonForm.addEventListener("click", function(e) {
-//     e.preventDefault()
-//     console.log(nameInput.value)
-//     document.querySelector(".textarea").value = ""
-//     document.querySelector(".nameInput").value = ""
-//     document.querySelector(".emailInput").value = ""
-// })
-// error handling for form submit button
+
 const buttonSubmit = document.querySelector(".buttonInputSend")
 const nameInput = document.querySelector("input[type=name]")
 const emailInput = document.querySelector("input[type=email]")
@@ -130,62 +107,3 @@ buttonSubmit.addEventListener("click", function(e) {
 
     }
 })
-// setup for navs to be minimized when reaching a screen width of 900px
-// if (window.innerWidth <= 900) {
-//     const socials = document.querySelector(".socialsList")
-//     buttonSocial.classList.add("socialButtonAnimation")
-//     socials.classList.add("socialAnimation")
-//     pSocial.classList.add("pVisible")
-
-//         if (document.querySelector(".socialAnimation")) {
-//             buttonSocial.innerHTML = `<button class="socialsButton"><img src="./assets/next.png"></button>`
-//         } else {
-//             buttonSocial.innerHTML = `<button class="socialsButton"><img src="./assets/cancel.png"></button>`
-//         }
-// }  else {
-// }
-
-
-
-
-
-// const scrollElements = document.querySelectorAll(".scroll");
-
-// const elementInView = (el, dividend = 1) => {
-//     const elementTop = el.getBoundingClientRect().top;
-
-//     return (
-//         elementTop <=
-//         (window.innerHeight || document.documentElement.clientHeight) / dividend
-//     );
-// };
-
-// const elementOutofView = (el) => {
-//     const elementTop = el.getBoundingClientRect().top;
-
-//     return (
-//         elementTop > (window.innerHeight || document.documentElement.clientHeight)
-//     );
-// };
-
-// const displayScrollElement = (element) => {
-//     element.classList.add("scrolled");
-// };
-
-// const hideScrollElement = (element) => {
-//     element.classList.remove("scrolled");
-// };
-
-// const handleScrollAnimation = () => {
-//     scrollElements.forEach((el) => {
-//         if (elementInView(el, 1.25)) {
-//             displayScrollElement(el);
-//         } else if (elementOutofView(el)) {
-//             hideScrollElement(el)
-//         }
-//     })
-// }
-
-// window.addEventListener("scroll", () => {
-//     handleScrollAnimation();
-// });
